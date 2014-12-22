@@ -262,7 +262,9 @@ public class TestSolution {
   @Test
   public void testCaldec() {
     assertEquals("33.(3)",Solution.caldec(100, 3));
+    assertEquals("0.(09)",Solution.caldec(1, 11));
     assertEquals("0.5",Solution.caldec(1, 2));
+    assertEquals("0.(18)",Solution.caldec(2, 11));
   }
   @Test
   public void compare() {

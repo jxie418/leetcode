@@ -1,6 +1,11 @@
 package com.jing.xie.leetcode.array;
 
 public class Solution {
+  /**
+   * Find Minimum in Rotated Sorted Array II
+   * @param num
+   * @return
+   */
   public static int findMin(int[] num) {
     if (num == null || num.length == 0) {
       return 0;

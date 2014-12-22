@@ -254,7 +254,6 @@ public class Solution {
         m = num[i];
     while (m / exp > 0) {
       int[] bucket = new int[10];
-
       for (i = 0; i < n; i++)
         bucket[(num[i] / exp) % 10]++;
       for (i = 1; i < 10; i++)
@@ -844,20 +843,28 @@ public class Solution {
     return S.substring(i + 1, S.length());
   }
 
+  static int getLen(int residule, int b) {
+    int count = 0;
+    while( residule / b == 0 ) {
+      count++;
+      residule *= 10;
+    }
+    return count;
+  }
   public static String caldec(int a, int b) {
     StringBuilder s = new StringBuilder();
     int residule = a % b;
-    Map<Integer, Integer> residule_index = new HashMap<Integer, Integer>();
+    Set<Integer> set = new HashSet<Integer>();
     s.append(a / b);
     s.append(".");
-    int index = s.length();
-    while (residule != 0 && residule_index.get(residule) == null) {
-      residule_index.put(residule, index++);
+    while (residule != 0 && !set.contains(residule)) {
+      set.add(residule);
       s.append((residule * 10) / b);
       residule = (residule * 10) % b;
     }
-    if (residule_index.get(residule) != null) {
-      s.insert(s.length() - 1, "(");
+    if (set.contains(residule)) {
+      int count = getLen(residule, b);
+      s.insert(s.length() - count, "(");
       s.append(")");
     }
     if (s.charAt(s.length() - 1) == '.') {
@@ -1377,5 +1384,21 @@ public class Solution {
       }
     }
     return max;
+  }
+  /**
+   * dp[2] = dp[0] * dp[1]  + dp[1] * dp[0];
+   * 
+   * dp[3] = dp[0] * dp[2]  + dp[1] * dp[1]  + dp[2] * dp[0];
+   **/
+  public static int numTrees(int n) {
+    int [] dp = new int[n + 1];
+    dp[0] = 1;
+    dp[1] = 1;
+    for (int i = 2 ; i <= n; i++) {
+      for (int j = 0 ; j < i; j++) {
+        dp[i] += dp[j] * dp[i-j-1];
+      }
+    }
+    return dp[n];
   }
 }
