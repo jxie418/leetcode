@@ -5,7 +5,9 @@ package com.jing.xie.leetcode.permutation;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author JXie
@@ -229,5 +231,84 @@ public class PermutationSolution {
       }
     }
     return dp[0] - 1;
+  }
+
+  /**
+   * Restore IP Addresses Combinations
+   */
+  public List<String> restoreIpAddresses(String s) {
+    List<String> res = new ArrayList<String>();
+    if (s == null || s.length() == 0) {
+      return res;
+    }
+    restoreIpAddressesHelper(res, s, 1, "");
+    return res;
+  }
+
+  public void restoreIpAddressesHelper(List<String> res, String s, int step, String value) {
+    if (step == 4 && isValid(s)) {
+      res.add(value + "." + s);
+    } else if (step < 4) {
+      for (int i = 1; i <= s.length(); i++) {
+        String tmp = s.substring(0, i);
+        if (isValid(tmp)) {
+          tmp = step == 1 ? tmp : value + "." + tmp;
+          restoreIpAddressesHelper(res, s.substring(i), step + 1, tmp);
+        }
+      }
+    }
+  }
+
+  public boolean isValid(String s) {
+    if (s == null || s.length() == 0 || s.length() > 3) {
+      return false;
+    }
+    if (s.length() == 1) {
+      int value = Integer.parseInt(s);
+      return value >= 0 && value <= 9;
+    }
+    if (s.charAt(0) == '0') {
+      return false;
+    }
+    int value = Integer.parseInt(s);
+    return value > 0 && value <= 255;
+  }
+
+  /**
+   * Combinations Letter Combinations of a Phone Number
+   */
+  static Map<String, String> map = new HashMap<String, String>();
+  static {
+    map.put("1", "1");
+    map.put("2", "abc");
+    map.put("3", "def");
+    map.put("4", "ghi");
+    map.put("5", "jkl");
+    map.put("6", "mno");
+    map.put("7", "pqrs");
+    map.put("8", "tuv");
+    map.put("9", "wxyz");
+    map.put("0", "0");
+  }
+
+  public List<String> letterCombinations(String digits) {
+    List<String> res = new ArrayList<String>();
+    if (digits == null || digits.length() == 0) {
+      return res;
+    }
+    recurse(res, digits, 0, "");
+    return res;
+  }
+
+  void recurse(List<String> res, String digits, int index, String str) {
+    if (index == digits.length()) {
+      res.add(str);
+    } else if (index < digits.length()) {
+      String tmp = map.get(digits.substring(index, index + 1));
+      for (int i = 0; i < tmp.length(); i++) {
+        String newTmp = str + tmp.charAt(i);
+        recurse(res, digits, index + 1, newTmp);
+      }
+    }
   }
 }
