@@ -412,5 +412,10 @@ public class TestSolution {
     assertEquals(1, Solution.numberOfOne(8));
   }
   
-  
+  @Test
+  public void testGetBiggerOne() {
+    String s1 = "178";
+    String s2 = "245";
+    assertEquals("178", Solution.getBiggerOne(s1, s2));
+  }
 }

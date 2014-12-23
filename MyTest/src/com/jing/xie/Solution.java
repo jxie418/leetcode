@@ -1401,4 +1401,24 @@ public class Solution {
     }
     return dp[n];
   }
+  public static String getBiggerOne(String s1, String s2) {
+    int[] table1 = getIntegerTable(s1);
+    int[] table2 = getIntegerTable(s2);
+    for (int i = table1.length -1; i>=0; i--) {
+      if (table1[i] > table2[i]) {
+        return s1;
+      } else if (table1[i] < table2[i]) {
+        return s2;
+      }
+    }
+    return s1;
+  }
+
+  private static int[] getIntegerTable(String s1) {
+    int[] table1 = new int[10];
+    for (int i = 0 ; i < s1.length(); i++) {
+      table1[s1.charAt(i) - '0']++;
+    }
+    return table1;
+  }
 }

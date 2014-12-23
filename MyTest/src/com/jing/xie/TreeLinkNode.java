@@ -1,8 +1,8 @@
 package com.jing.xie;
 
 public class TreeLinkNode {
-  int val;
-  TreeLinkNode left, right, next;
+  public int val;
+  public TreeLinkNode left, right, next;
 
   TreeLinkNode(int x) {
     val = x;
