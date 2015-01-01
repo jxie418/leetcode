@@ -1,6 +1,7 @@
 package com.jing.xie.leetcode.tree;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
@@ -12,18 +13,9 @@ public class TreeSolution {
 
   /**
    * 
-   * 
-Binary Tree Level Order Traversal
-Binary Tree Level Order Traversal II
-Binary Tree Zigzag Level Order Traversal
-Construct Binary Tree from Preorder and Inorder
-Construct Binary Tree from Inorder and Postorder
-Search Range in a Binary Search Tree
-Binary Tree Serialize and Deserialize
-Binary Tree Upside Down 
-   * 
-   * 
-   * 
+    Search Range in a Binary Search Tree
+    Binary Tree Serialize and Deserialize
+    Binary Tree Upside Down 
    * 
    */
   /**
@@ -512,5 +504,153 @@ Binary Tree Upside Down
     List<Integer> rightArray = new ArrayList<Integer>(list);
     rightArray.add(root.val);
     recurse(res, root.right, sum - root.val, rightArray);
+  }
+  /**
+   * Binary Tree Level Order Traversal 
+   * @param root
+   * @return
+   */
+  public List<List<Integer>> levelOrder(TreeNode root) {
+    List<List<Integer>> list = new ArrayList<List<Integer>>();
+    if (root == null) {
+      return list;
+    }
+    List<TreeNode> current = new ArrayList<TreeNode>();
+    current.add(root);
+    while (!current.isEmpty()) {
+      List<TreeNode> nextLay = new ArrayList<TreeNode>();
+      List<Integer> values = new ArrayList<Integer>();
+      for (TreeNode node : current) {
+        values.add(node.val);
+        if (node.left != null) {
+          nextLay.add(node.left);
+        }
+        if (node.right != null) {
+          nextLay.add(node.right);
+        }
+      }
+      list.add(values);
+      current = nextLay;
+    }
+    return list;
+  }
+  /**
+   * Binary Tree Level Order Traversal II
+   * @param root
+   * @return
+   */
+  public List<List<Integer>> levelOrderBottom(TreeNode root) {
+    List<List<Integer>> list = new ArrayList<List<Integer>>();
+    if (root == null) {
+      return list;
+    }
+    List<TreeNode> current = new ArrayList<TreeNode>();
+    current.add(root);
+    while (!current.isEmpty()) {
+      List<TreeNode> nextLay = new ArrayList<TreeNode>();
+      List<Integer> values = new ArrayList<Integer>();
+      for (TreeNode node : current) {
+        values.add(node.val);
+        if (node.left != null) {
+          nextLay.add(node.left);
+        }
+        if (node.right != null) {
+          nextLay.add(node.right);
+        }
+      }
+      list.add(values);
+      current = nextLay;
+    }
+    Collections.reverse(list);
+    return list;
+  }
+  /**
+   * Binary Tree Zigzag Level Order Traversal
+   * @param root
+   * @return
+   */
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    List<List<Integer>> list = new ArrayList<List<Integer>>();
+    if (root == null) {
+      return list;
+    }
+    boolean leftToRigh = true;
+    List<TreeNode> current = new ArrayList<TreeNode>();
+    current.add(root);
+    while (!current.isEmpty()) {
+      List<TreeNode> nextLay = new ArrayList<TreeNode>();
+      List<Integer> values = new ArrayList<Integer>();
+      for (TreeNode node : current) {
+        values.add(node.val);
+        if (node.left != null) {
+          nextLay.add(node.left);
+        }
+        if (node.right != null) {
+          nextLay.add(node.right);
+        }
+      }
+      if (leftToRigh) {
+        list.add(values);
+      } else {
+        Collections.reverse(values);
+        list.add(values);
+      }
+      leftToRigh = !leftToRigh;
+      current = nextLay;
+    }
+    
+    return list;
+  }
+  /**
+   * Construct Binary Tree from Preorder and Inorder
+   * @param preorder
+   * @param inorder
+   * @return
+   */
+  public TreeNode buildTree(int[] preorder, int[] inorder) {
+    return buildTree(preorder, 0, preorder.length -1, inorder, 0, inorder.length -1);
+  }
+  
+  public TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd) {
+    if (preStart > preEnd || inStart > inEnd) {
+      return null;
+    }
+    TreeNode root = new TreeNode(preorder[preStart]);
+    int k = 0;
+    for (int i = inStart; i <= inEnd; i++) {
+      if (inorder[i] == preorder[preStart]) {
+        k = i;
+        break;
+      }
+    }
+    root.left = buildTree(preorder, preStart + 1, preStart + k - inStart, inorder, inStart, k - 1);
+    root.right = buildTree(preorder, preStart + k + 1 - inStart, preEnd, inorder, k + 1, inEnd);
+    return root;
+  }
+  /**
+   * Construct Binary Tree from Inorder and Postorder
+   * @param inorder
+   * @param postorder
+   * @return
+   */
+  public TreeNode buildTree2(int[] inorder, int[] postorder) {
+    return buildTree2(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
+  }
+
+  public TreeNode buildTree2(int[] inorder, int inStart, int inEnd, int[] postorder, int postStart, int postEnd) {
+    if (postStart > postEnd || inStart > inEnd) {
+      return null;
+    }
+    TreeNode root = new TreeNode(postorder[postEnd]);
+    int k = 0;
+    for (int i = inStart; i <= inEnd; i++) {
+      if (inorder[i] == postorder[postEnd]) {
+        k = i;
+        break;
+      }
+    }
+    root.left = buildTree(inorder, inStart, k - 1, postorder, postStart, postStart + k - inStart - 1);
+    root.right = buildTree(inorder, k + 1, inEnd, postorder, postStart + k - inStart, postEnd - 1);
+    return root;
   }
 }
