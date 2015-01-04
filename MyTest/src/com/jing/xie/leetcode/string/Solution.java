@@ -55,4 +55,45 @@ Just like the question Divide Two Integers, be wary of edge case such as negativ
     }
     return sb.toString();
   }
+  /**
+   * 
+   * @param s
+   * @return
+   */
+  public boolean isNumber(String s) {
+    if (s == null || s.trim().length() == 0) {
+      return false;
+    }
+    s = s.trim();
+    int i = 0 ;
+    int n = s.length();
+    boolean isNumber = false;
+    if (i < n && (s.charAt(i) == '+' || s.charAt(i)=='-')) {
+      i++;
+    }
+    while(i < n && Character.isDigit(s.charAt(i))) {
+      i++;
+      isNumber = true;
+    }
+    if (i < n && s.charAt(i) =='.') {
+      i++;
+      while(i < n && Character.isDigit(s.charAt(i))) {
+        i++;
+        isNumber = true;
+      }
+    }
+    if (isNumber && i < n && s.charAt(i) == 'e') {
+      i++;
+      isNumber= false;
+      if (i < n && (s.charAt(i)=='+' || s.charAt(i)=='-')) {
+        i++;
+      }
+      while(i < n && Character.isDigit(s.charAt(i))) {
+        i++;
+        isNumber = true;
+      }
+    }
+    return isNumber && i == n;
+  }
+  
 }
