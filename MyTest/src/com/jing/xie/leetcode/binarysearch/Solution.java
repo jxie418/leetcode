@@ -218,11 +218,11 @@ public class Solution {
         return A[0];
       }
     }
-    int i =0, j = 0 , m = A.length + B.length;
-    double pre =0, last = 0;
-    while(i + j < m >>>1) {
+    int i = 0, j = 0, m = A.length + B.length;
+    double pre = 0, last = 0;
+    while (i + j < m >>> 1) {
       pre = last;
-      if (j >=B.length) {
+      if (j >= B.length) {
         last = A[i];
         i++;
       } else if (i >= A.length) {
@@ -236,7 +236,7 @@ public class Solution {
         i++;
       }
     }
-    return m % 2 == 0 ?(pre + last) / 2.0 : last;
+    return m % 2 == 0 ? (pre + last) / 2.0 : last;
   }
   /**
    * Find Peak Element
