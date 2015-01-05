@@ -165,7 +165,7 @@ public class Solution {
       return false;
     }
     int row = matrix.length;
-    int  col = matrix[0].length;
+    int col = matrix[0].length;
     int low =0 ;
     int high = row * col - 1;
     while (low <= high) {

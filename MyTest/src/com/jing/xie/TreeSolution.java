@@ -33,7 +33,6 @@ public class TreeSolution {
       root.right = tmp;
       mirror(root.left);
       mirror(root.right);
-
       return root;
     }
   }
