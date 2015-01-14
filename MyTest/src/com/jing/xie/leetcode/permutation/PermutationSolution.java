@@ -233,6 +233,31 @@ public class PermutationSolution {
     return dp[0] - 1;
   }
 
+  public int minCut2(String s) {
+    if (s == null || s.length() == 0) {
+      return 0;
+    }
+    int [] dp = new int[s.length()];
+    boolean[][] table = new boolean[s.length()][s.length()];
+    for(int i = s.length() -1; i>=0; i--) {
+      dp[i] = Integer.MAX_VALUE;
+      for (int j = i ; j < s.length();j++) {
+        if (j - i < 2) {
+          table[i][j] = s.charAt(i) == s.charAt(j);
+        } else {
+          table[i][j] = s.charAt(i) == s.charAt(j) && table[i+1][j-1];
+        }
+        if (table[i][j]) {
+          if (j == s.length()-1) {
+            dp[i] = 0;
+          } else {
+            dp[i] = Math.min(dp[i], dp[j+1]+1);
+          }
+        }
+      }
+    }
+    return dp[0];
+  }
   /**
    * Restore IP Addresses Combinations
    */

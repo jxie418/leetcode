@@ -71,25 +71,25 @@ public class Solution {
     int n = pattern.length();
     Map<Character, Integer> rightMostIndeies = preprocessForBadCharacterShift(pattern);
     int alignedAt = 0;
-    while(alignedAt + (n -1) < m) {
-      for (int indexInPattern = n -1; indexInPattern >= 0 ; indexInPattern--) {
+    while (alignedAt + (n - 1) < m) {
+      for (int indexInPattern = n - 1; indexInPattern >= 0; indexInPattern--) {
         int indexInText = alignedAt + indexInPattern;
         if (indexInText >= m) {
           break;
         }
         char x = text.charAt(indexInText);
         char y = pattern.charAt(indexInPattern);
-       
+
         if (x != y) {
-           Integer r = rightMostIndeies.get(x);
-           if (r == null) {
-             alignedAt = indexInText + 1;
-           } else {
-             int shift = indexInText - (alignedAt + r);
-             alignedAt += shift >0 ? shift : 1;
-           }
-           break;
-        } else if ( indexInPattern == 0) {
+          Integer r = rightMostIndeies.get(x);
+          if (r == null) {
+            alignedAt = indexInText + 1;
+          } else {
+            int shift = indexInText - (alignedAt + r);
+            alignedAt += shift > 0 ? shift : 1;
+          }
+          break;
+        } else if (indexInPattern == 0) {
           matches.add(alignedAt);
           alignedAt++;
         }
@@ -97,12 +97,13 @@ public class Solution {
     }
     return matches;
   }
+
   private static Map<Character, Integer> preprocessForBadCharacterShift(String pattern) {
     Map<Character, Integer> map = new HashMap<Character, Integer>();
     int length = pattern.length();
-    for (int i = 0; i < length  ; i++) {
+    for (int i = 0; i < length; i++) {
       char c = pattern.charAt(i);
-      map.put(c, length - i -1);
+      map.put(c, length - i - 1);
     }
     return map;
   }
@@ -439,50 +440,52 @@ public class Solution {
       s[i] = sb.toString();
     }
   }
-  
+
   public int largestRectangleArea(int[] height) {
     if (height == null || height.length == 0) {
       return 0;
     }
-    int maxValue = 0 ;
+    int maxValue = 0;
+    int i = 0;
     Stack<Integer> stack = new Stack<Integer>();
-    for (int i = 0 ; i < height.length ; i++) {
+    while (i < height.length) {
       if (stack.isEmpty() || height[stack.peek()] < height[i]) {
-        stack.push(i);
+        stack.push(i++);
       } else {
         int pos = stack.pop();
-        maxValue = Math.max(maxValue, height[pos]*(stack.isEmpty()? i : i - pos -1));
+        maxValue = Math.max(maxValue, height[pos] * (stack.isEmpty() ? i : i - pos - 1));
       }
     }
     while (!stack.isEmpty()) {
       int pos = stack.pop();
-      maxValue = Math.max(maxValue, height[pos]*(stack.isEmpty()? height.length : height.length - pos -1));
+      maxValue = Math.max(maxValue, height[pos] * (stack.isEmpty() ? height.length : height.length - pos - 1));
     }
     return maxValue;
   }
-  
+
   public static void sortString(String[] a) {
     int wordLen = a[0].length();
     int R = 256;
-    String [] copy = new String[a.length];
-    for (int i = wordLen -1; i >=0; i--) {
-      int [] count = new int[R+1];
-      for (int j = 0 ; j < a.length ; j++) {
-        count[a[j].charAt(i)+1]++;
+    String[] copy = new String[a.length];
+    for (int i = wordLen - 1; i >= 0; i--) {
+      int[] count = new int[R + 1];
+      for (int j = 0; j < a.length; j++) {
+        count[a[j].charAt(i) + 1]++;
       }
       System.out.println(Arrays.toString(count));
-      for (int k = 0 ; k < R; k++) {
-        count[k+1] += count[k];
+      for (int k = 0; k < R; k++) {
+        count[k + 1] += count[k];
       }
       System.out.println(Arrays.toString(count));
-      for (int j = 0 ; j < a.length; j++) {
+      for (int j = 0; j < a.length; j++) {
         copy[count[a[j].charAt(i)]++] = a[j];
       }
-      for (int j = 0 ; j < a.length ; j++) {
+      for (int j = 0; j < a.length; j++) {
         a[j] = copy[j];
       }
     }
   }
+
   public int strcmp(String s1, String s2) {
     if (s1 == null) {
       if (s2 == null) {
@@ -494,8 +497,8 @@ public class Solution {
     if (s2 == null) {
       return 1;
     }
-    int i = 0 , j  = 0;
-    while(i < s1.length() && j < s2.length() && s1.charAt(i) == s2.charAt(j)) {
+    int i = 0, j = 0;
+    while (i < s1.length() && j < s2.length() && s1.charAt(i) == s2.charAt(j)) {
       i++;
       j++;
     }

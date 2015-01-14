@@ -30,7 +30,6 @@ public class Solution {
     }
     int pre= 1, cur = 2;
     int res = A.length;
-    
     while (cur < A.length) {
       if (A[pre -1] == A[pre]  && A[pre] == A[cur]) {
         cur++;
@@ -43,6 +42,13 @@ public class Solution {
     }
     return res;
   }
+  /***
+   * 
+   * @param A
+   * @param m
+   * @param B
+   * @param n
+   */
   public void merge(int A[], int m, int B[], int n) {
     int i = m - 1;
     int j = n - 1;
