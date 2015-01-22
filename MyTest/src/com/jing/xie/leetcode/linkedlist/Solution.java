@@ -336,10 +336,9 @@ public class Solution {
     }
     return newHead;
   }
-  
+
   /**
-   * Swap pairs and recurse.
-   *Swap Nodes in Pairs  
+   * Swap pairs and recurse. Swap Nodes in Pairs
    */
   public ListNode swapPairs(ListNode head) {
     if (head == null || head.next == null) {
@@ -351,6 +350,7 @@ public class Solution {
     head.next = swapPairs(nextPairs);
     return newHead;
   }
+
   /**
    * 
    * @param head
@@ -373,29 +373,31 @@ public class Solution {
     dummy.next = head;
     ListNode pre = dummy;
     ListNode p = head;
-    while(p != null && n-- > 0) {
+    while (p != null && n-- > 0) {
       pre = p;
       p = p.next;
     }
     ListNode q = p;
-    while(q.next != null) {
+    while (q.next != null) {
       q = q.next;
     }
     pre.next = null;
     q.next = head;
     return p;
   }
-  
+
   int getLen(ListNode head) {
     int count = 0;
-    while(head != null) {
+    while (head != null) {
       ++count;
       head = head.next;
     }
     return count;
   }
+
   /***
-   * Reverse Nodes in k-Group 
+   * Reverse Nodes in k-Group
+   * 
    * @param head
    * @param k
    * @return
@@ -407,8 +409,8 @@ public class Solution {
     ListNode dummy = new ListNode(0);
     dummy.next = head;
     ListNode pre = dummy;
-    int i = 0 ;
-    while(head != null) {
+    int i = 0;
+    while (head != null) {
       i++;
       if (i % k == 0) {
         pre = reverse(pre, head.next);
@@ -419,8 +421,10 @@ public class Solution {
     }
     return dummy.next;
   }
+
   /**
-   * Reverse Nodes in k-Group 
+   * Reverse Nodes in k-Group
+   * 
    * @param pre
    * @param next
    * @return
@@ -441,9 +445,10 @@ public class Solution {
     pre.next = last;
     return newPre;
   }
-  
+
   /**
    * Intersection of Two Linked Lists
+   * 
    * @param headA
    * @param headB
    * @return
@@ -466,18 +471,20 @@ public class Solution {
     }
     return null;
   }
+
   /**
    * Insertion Sort List
+   * 
    * @param head
    * @return
    */
   public ListNode insertionSortList(ListNode head) {
     ListNode dummy = new ListNode(0);
     ListNode pre = dummy;
-    while(head != null) {
+    while (head != null) {
       pre = dummy;
       ListNode p = dummy.next;
-      while(p.next != null && p.val < head.val) {
+      while (p.next != null && p.val < head.val) {
         pre = p;
         p = p.next;
       }
@@ -488,8 +495,10 @@ public class Solution {
     }
     return dummy.next;
   }
+
   /**
    * Add Two Numbers
+   * 
    * @param l1
    * @param l2
    * @return
@@ -497,12 +506,12 @@ public class Solution {
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode dummy = new ListNode(0);
     ListNode pre = dummy;
-    int carry = 0 ;
+    int carry = 0;
     while (l1 != null || l2 != null) {
       int value1 = l1 == null ? 0 : l1.val;
       int value2 = l2 == null ? 0 : l2.val;
       int value = value1 + value2 + carry;
-      carry = value /10;
+      carry = value / 10;
       pre.next = new ListNode(value % 10);
       pre = pre.next;
       l1 = l1 == null ? null : l1.next;
@@ -513,12 +522,11 @@ public class Solution {
     }
     return dummy.next;
   }
-  
-   /***
-    * Here is the method to find middle in linked list.
-    * use tow pointer. one is slow and one is fast.
-    */
-  
+
+  /***
+   * Here is the method to find middle in linked list. use tow pointer. one is slow and one is fast.
+   */
+
   public ListNode findMiddle(ListNode head) {
     if (head == null) {
       return null;
@@ -530,8 +538,10 @@ public class Solution {
     }
     return slow;
   }
+
   /***
-   * Remove Nth Node From End of List 
+   * Remove Nth Node From End of List
+   * 
    * @param head
    * @param n
    * @return
@@ -554,4 +564,37 @@ public class Solution {
     }
     return head;
   }
+
+  /**
+   * 
+   1.Insert a node into a sorted circular linked list ( all next element is larger except for the last one), the given
+   * head can point to any node
+   * 
+   * 1 -> 3 -> 5 ->7 ^ | | | | _ _ _ |
+   * 
+   * 如果node的值是2，则插入1和3之间；如果node的值是8或者0，插入7和1之间。 要考虑node值重复的情况，虽然结果一样，但要和面试官讨论新的节点插入的位置，可 能插入在最开始或最后，我不记得了。 例如插入3,
+   * 结果是1->3->3'->5->7或者1->3'->3->5->7
+   */
+  public static void insertNode(ListNode head, ListNode newNode) {
+    if (head == null) {
+      head = newNode;
+      newNode.next = head;
+      return;
+    }
+    ListNode pre = head;
+    ListNode p = head.next;
+    while (p != head) {
+      if (newNode.val > pre.val && p.val > newNode.val) {
+        newNode.next = p;
+        pre.next = newNode;
+      } else if (newNode.val == pre.val || p.val == newNode.val) {
+        newNode.next = p;
+        pre.next = newNode;
+      } else if (p.val < newNode.val) {
+        pre = p;
+        p = p.next;
+      }
+    }
+  }
+
 }

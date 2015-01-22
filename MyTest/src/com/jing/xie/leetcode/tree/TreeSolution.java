@@ -653,4 +653,50 @@ public class TreeSolution {
     root.right = buildTree(inorder, k + 1, inEnd, postorder, postStart + k - inStart, postEnd - 1);
     return root;
   }
+  
+  public int findSuccessor(TreeNode root, TreeNode node) {
+    if (node.right != null) {
+      return findMin(node.right);
+    }
+    int v = root.val;
+    while(root != null) {
+      if (node.val < root.val) {
+        v = root.val;
+        root = root.left;
+      } else if (node.val > root.val) {
+        v = root.val;
+        root = root.right;
+      } else {
+        break;
+      }
+    }
+    return v;
+  }
+  /**
+   * 1：print all path from root to leaf
+   * @param root
+   * @return
+   */
+  public List<List<Integer>> getAllThePath(TreeNode root) {
+    List<List<Integer>> res = new ArrayList<List<Integer>> ();
+    helperAllPath(res, new ArrayList<Integer>(), root);
+    return res;
+  }
+  
+  public void helperAllPath(List<List<Integer>> res, List<Integer> list, TreeNode root) {
+    if (root == null) {
+      return;
+    }
+    if (root.left == null && root.right == null) {
+      list.add(root.val);
+      res.add(list);
+      return;
+    }
+    List<Integer> leftList = new ArrayList<Integer>(list);
+    leftList.add(root.val);
+    helperAllPath(res, leftList, root.left);
+    List<Integer> rightList = new ArrayList<Integer>(list);
+    rightList.add(root.val);
+    helperAllPath(res, rightList, root.right);
+  }
 }

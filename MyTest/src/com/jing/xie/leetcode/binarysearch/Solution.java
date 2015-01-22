@@ -206,21 +206,9 @@ public class Solution {
    * @return
    */
   public double findMedianSortedArrays(int A[], int B[]) {
-    if (A == null || B == null) {
-      return 0;
-    }
-    if (A.length + B.length < 2) {
-      if (A.length == 0 && B.length == 0) {
-        return 0;
-      } else if (A.length == 0) {
-        return B[0];
-      } else {
-        return A[0];
-      }
-    }
     int i = 0, j = 0, m = A.length + B.length;
     double pre = 0, last = 0;
-    while (i + j < m >>> 1) {
+    while (i + j <= m >>> 1) {
       pre = last;
       if (j >= B.length) {
         last = A[i];

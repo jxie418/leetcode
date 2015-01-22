@@ -36,8 +36,7 @@ public class Solution {
         res--;
       }else {
         pre++;
-        A[pre] = A[cur];
-        cur++;
+        A[pre] = A[cur++];
       }
     }
     return res;

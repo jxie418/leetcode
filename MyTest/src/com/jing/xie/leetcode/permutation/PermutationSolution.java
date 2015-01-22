@@ -63,9 +63,6 @@ public class PermutationSolution {
   private void subset2Helper(List<List<Integer>> set, int[] num, int pos, List<Integer> list) {
     set.add(list);
     for (int i = pos; i < num.length; i++) {
-      /**
-       * So subset one doesn't have this check.
-       */
       if (i > pos && num[i - 1] == num[i]) {
         continue;
       }
@@ -98,9 +95,6 @@ public class PermutationSolution {
       res.add(list);
     } else if (list.size() < num.length) {
       for (int i = 0; i < num.length; i++) {
-        /**
-         * Permutations doesn't have it.
-         */
         if (i > 0 && !dp[i - 1] && num[i - 1] == num[i]) {
           continue;
         }
