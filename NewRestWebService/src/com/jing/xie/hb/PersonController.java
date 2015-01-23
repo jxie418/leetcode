@@ -21,4 +21,10 @@ public class PersonController {
     Person p = personService.getPersonDetail(id);
     return p;
   }
+  
+  @RequestMapping("/personjson")
+  @Produces("application/json")
+  public String getPersonJson(@RequestParam(value = "id", required = false, defaultValue = "0") Integer id) {
+    return "{'friends': ['Michael', 'Tom', 'Daniel', 'John', 'Nick']}";
+  }
 }
