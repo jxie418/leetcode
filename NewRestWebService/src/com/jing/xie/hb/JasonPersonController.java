@@ -18,7 +18,7 @@ public class JasonPersonController {
 
   @GET
   @Path("/get")
-  @Produces("application/json")
+  @Produces(MediaType.APPLICATION_JSON)
   public Person getPersonDetail(@RequestParam(value = "id", required = false, defaultValue = "0") Integer id) {
     Person p = new Person();
     p.setId(1);
