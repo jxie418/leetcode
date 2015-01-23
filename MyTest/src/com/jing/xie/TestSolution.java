@@ -418,4 +418,8 @@ public class TestSolution {
     String s2 = "245";
     assertEquals("178", Solution.getBiggerOne(s1, s2));
   }
+  @Test
+  public void testGetPrime(){
+    System.out.println(Solution.getNPrime(7));
+  }
 }

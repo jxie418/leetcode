@@ -1421,4 +1421,28 @@ public class Solution {
     }
     return table1;
   }
+  
+  public static List<Integer> getNPrime(int n) {
+    List<Integer> list = new ArrayList<Integer>();
+    int v = 2;
+    int i = 0;
+    while (i != n) {
+      if (isPrime2(v)) {
+        list.add(v);
+        i++;
+      }
+      v++;
+    }
+    return list;
+  }
+
+  public static boolean isPrime2(int n) {
+    for (int i = 2; i < n; i++) {
+      if (n % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
 }
