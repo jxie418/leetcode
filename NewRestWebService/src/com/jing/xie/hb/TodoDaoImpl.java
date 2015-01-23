@@ -25,4 +25,24 @@ public class TodoDaoImpl implements TodoDao {
     return todos;
   }
 
+  @Override
+  public Todo findById(Long id) {
+    List<Todo> todos = new ArrayList<Todo>();
+    todos = sessionFactory.getCurrentSession().createQuery("from Todo where id =?").setParameter(0, id).list();
+    if (todos.size() >0) {
+      return todos.get(0);
+    }
+    return null;
+  }
+
+  @Override
+  public Todo add(String summary, String description) {
+    Todo todo = new Todo();
+    todo.setId(new Long(5));
+    todo.setSummary(summary);
+    todo.setDescription(description);
+    sessionFactory.getCurrentSession().saveOrUpdate(todo);
+    return todo;
+  }
+
 }
