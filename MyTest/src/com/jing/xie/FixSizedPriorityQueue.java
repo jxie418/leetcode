@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 import java.util.Random;
 
 // Top N Max
-public class FixSizedPriorityQueue<E extends Comparable> {
+public class FixSizedPriorityQueue<E extends Comparable<E>> {
   private PriorityQueue<E> queue;
   private int maxSize; // 堆的最大容量
 
@@ -14,11 +14,11 @@ public class FixSizedPriorityQueue<E extends Comparable> {
     if (maxSize <= 0)
       throw new IllegalArgumentException();
     this.maxSize = maxSize;
-    this.queue = new PriorityQueue(maxSize, new Comparator<E>() {
+    this.queue = new PriorityQueue<E>(maxSize, new Comparator<E>() {
       public int compare(E o1, E o2) {
         // 生成最大堆使用o2-o1,生成最小堆使用o1-o2, 并修改 e.compareTo(peek) 比较规则
         //return (o2.compareTo(o1));
-        return  o1.compareTo(o2);
+        return  o2.compareTo(o1);
       }
     });
   }
@@ -28,7 +28,7 @@ public class FixSizedPriorityQueue<E extends Comparable> {
       queue.add(e);
     } else { // 队列已满
       E peek = queue.peek();
-      if (e.compareTo(peek) > 0) { // 将新元素与当前堆顶元素比较，保留较小的元素
+      if (e.compareTo(peek) < 0) { // 将新元素与当前堆顶元素比较，保留较小的元素
         queue.poll();
         queue.add(e);
       }
@@ -42,7 +42,7 @@ public class FixSizedPriorityQueue<E extends Comparable> {
   }*/
 
   public static void main(String[] args) {
-    final FixSizedPriorityQueue pq = new FixSizedPriorityQueue(10);
+    final FixSizedPriorityQueue<Integer> pq = new FixSizedPriorityQueue<Integer>(10);
     Random random = new Random();
     int rNum = 0;
     System.out.println("100 个 0~999 之间的随机数：-----------------------------------");
