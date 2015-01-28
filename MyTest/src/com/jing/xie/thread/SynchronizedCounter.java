@@ -1,6 +1,6 @@
 package com.jing.xie.thread;
 
-public class SynchronizedCounter {
+public class SynchronizedCounter extends Thread {
   private int c = 0;
 
   public synchronized void increment() {
@@ -14,4 +14,6 @@ public class SynchronizedCounter {
   public synchronized int value() {
     return c;
   }
+  
+  
 }
