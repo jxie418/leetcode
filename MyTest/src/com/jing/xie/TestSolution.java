@@ -422,4 +422,9 @@ public class TestSolution {
   public void testGetPrime(){
     System.out.println(Solution.getNPrime(7));
   }
+  @Test
+  public void largestNumber() {
+    int[] num = {3, 30, 34, 5, 9};
+    assertEquals(Solution.largestNumber(num),"9534330");
+  }
 }

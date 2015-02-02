@@ -3,12 +3,11 @@ package com.jing.xie;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashMap;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Random;
@@ -845,12 +844,13 @@ public class Solution {
 
   static int getLen(int residule, int b) {
     int count = 0;
-    while( residule / b == 0 ) {
+    while (residule / b == 0) {
       count++;
       residule *= 10;
     }
     return count;
   }
+
   public static String caldec(int a, int b) {
     StringBuilder s = new StringBuilder();
     int residule = a % b;
@@ -1326,21 +1326,22 @@ public class Solution {
     return res;
   }
 
-  public int getMajorNumber(int [] num) {
+  public int getMajorNumber(int[] num) {
     int major = num[0];
     int count = 1;
-    for (int i = 1; i < num.length ; i++) {
+    for (int i = 1; i < num.length; i++) {
       if (count == 0) {
         major = num[i];
         count = 1;
       } else if (major == num[i]) {
-        count ++;
+        count++;
       } else {
-        count --;
+        count--;
       }
     }
     return major;
   }
+
   public static int getLongsubArray(int[] array, int target) {
     int maxLen = 0;
     int sumSoFar = 0;
@@ -1368,16 +1369,16 @@ public class Solution {
     }
     return maxLen;
   }
-  
-  public static int findMax(int [] num) {
-    int max = 0 ;
-    int l = 0 ;
-    int r = num.length -1;
-    while(l <= r ) {
+
+  public static int findMax(int[] num) {
+    int max = 0;
+    int l = 0;
+    int r = num.length - 1;
+    while (l <= r) {
       int mid = (l + r) >>> 1;
-      if ((mid == 0 || num[mid -1] < num[mid]) && (mid == num.length -1 || num[mid+1] < num[mid])) {
+      if ((mid == 0 || num[mid - 1] < num[mid]) && (mid == num.length - 1 || num[mid + 1] < num[mid])) {
         max = num[mid];
-      } else if (num[mid-1] > num[mid]) {
+      } else if (num[mid - 1] > num[mid]) {
         r = mid;
       } else {
         l = mid;
@@ -1385,26 +1386,28 @@ public class Solution {
     }
     return max;
   }
+
   /**
-   * dp[2] = dp[0] * dp[1]  + dp[1] * dp[0];
+   * dp[2] = dp[0] * dp[1] + dp[1] * dp[0];
    * 
-   * dp[3] = dp[0] * dp[2]  + dp[1] * dp[1]  + dp[2] * dp[0];
+   * dp[3] = dp[0] * dp[2] + dp[1] * dp[1] + dp[2] * dp[0];
    **/
   public static int numTrees(int n) {
-    int [] dp = new int[n + 1];
+    int[] dp = new int[n + 1];
     dp[0] = 1;
     dp[1] = 1;
-    for (int i = 2 ; i <= n; i++) {
-      for (int j = 0 ; j < i; j++) {
-        dp[i] += dp[j] * dp[i-j-1];
+    for (int i = 2; i <= n; i++) {
+      for (int j = 0; j < i; j++) {
+        dp[i] += dp[j] * dp[i - j - 1];
       }
     }
     return dp[n];
   }
+
   public static String getBiggerOne(String s1, String s2) {
     int[] table1 = getIntegerTable(s1);
     int[] table2 = getIntegerTable(s2);
-    for (int i = table1.length -1; i>=0; i--) {
+    for (int i = table1.length - 1; i >= 0; i--) {
       if (table1[i] > table2[i]) {
         return s1;
       } else if (table1[i] < table2[i]) {
@@ -1416,12 +1419,12 @@ public class Solution {
 
   private static int[] getIntegerTable(String s1) {
     int[] table1 = new int[10];
-    for (int i = 0 ; i < s1.length(); i++) {
+    for (int i = 0; i < s1.length(); i++) {
       table1[s1.charAt(i) - '0']++;
     }
     return table1;
   }
-  
+
   public static List<Integer> getNPrime(int n) {
     List<Integer> list = new ArrayList<Integer>();
     int v = 2;
@@ -1444,5 +1447,42 @@ public class Solution {
     }
     return true;
   }
-  
+
+  public static List<Integer> getXORList(List<Integer> a, List<Integer> b) {
+    List<Integer> res = new ArrayList<Integer>();
+    for (Integer i : a) {
+      if (!b.contains(i)) {
+        res.add(i);
+      }
+    }
+    return res;
+  }
+
+  public static String largestNumber(int[] num) {
+    if (num == null || num.length == 0) {
+      return "";
+    }
+    Integer[] copy = new Integer[num.length];
+    for(int i = 0 ; i < copy.length ; i++) {
+      copy[i] = new Integer(num[i]);
+    }
+    Arrays.sort(copy, new Comparator<Integer>() {
+      public int compare(Integer i1, Integer i2) {
+        StringBuilder sb1 = new StringBuilder();
+        StringBuilder sb2 = new StringBuilder();
+        String value1 = sb1.append(i2).append(i1).toString();
+        String value2 = sb2.append(i1).append(i2).toString();
+        return value1.compareTo(value2);
+      }
+    });
+    int i = 0;
+    while (i < copy.length && copy[i] == 0) {
+      i++;
+    }
+    StringBuilder sb = new StringBuilder();
+    while (i < copy.length) {
+      sb.append(copy[i++]);
+    }
+    return sb.length() == 0 ? "0" : sb.toString();
+  }
 }
