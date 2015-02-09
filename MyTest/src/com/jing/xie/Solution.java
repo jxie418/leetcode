@@ -824,7 +824,6 @@ public class Solution {
       i++;
     }
     return i == len2;
-
   }
 
   public static String getShortestString(String S) {
@@ -1463,7 +1462,7 @@ public class Solution {
       return "";
     }
     Integer[] copy = new Integer[num.length];
-    for(int i = 0 ; i < copy.length ; i++) {
+    for (int i = 0; i < copy.length; i++) {
       copy[i] = new Integer(num[i]);
     }
     Arrays.sort(copy, new Comparator<Integer>() {
@@ -1484,5 +1483,16 @@ public class Solution {
       sb.append(copy[i++]);
     }
     return sb.length() == 0 ? "0" : sb.toString();
+  }
+
+  public static void moveZeroToEnd3(int[] num) {
+    for (int i = 0; i < num.length; i++) {
+      for (int j = 0; j < num.length - i - 1; j++) {
+        if (num[j] == 0) {
+          num[j] = num[j + 1];
+          num[j + 1] = 0;
+        }
+      }
+    }
   }
 }

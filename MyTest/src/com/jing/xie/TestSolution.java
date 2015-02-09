@@ -387,7 +387,7 @@ public class TestSolution {
   @Test
   public void testMoveZeroToEnd2() {
     int [] num = {2,2,0,8,0};
-    Solution.moveZeroToEnd2(num);
+    Solution.moveZeroToEnd3(num);
     System.out.println(Arrays.toString(num));
   }
   @Test
