@@ -3,10 +3,5 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Jing/lucene-4.10.2/lucene-4.10.2/core/lucene-core-4.10.2.jar" sourcepath="C:/Jing/lucene-4.10.2/lucene-4.10.2-src.tar/lucene-4.10.2-src.jar">
-		<attributes>
-			<attribute name="source_encoding" value="ISO-8859-1"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
