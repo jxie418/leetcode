@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task xmlns="http://www.audatex.com/SAXIF">
+ <ItemId>90899CF8-750A-4364-962F-385CB5F76EDC</ItemId>
+ <Versions>
+  <Generator>ADXE</Generator>
+ </Versions>
+ <CaseId>577F0A11-D85C-7902-D028-045F1A2A90CB</CaseId>
+ <ReferenceTaskId>B28F9D80-7DF6-293C-214E-6EACD9333B1F</ReferenceTaskId>
+ <ClaimNumber>TEST-FB</ClaimNumber>
+ <PartnerSender>
+  <ItemId>D4A70673-4190-5B5A-26F0-388E99691553</ItemId>
+  <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+  <ParentId>MM-O-F5AF93AF</ParentId>
+  <MemberRole>Garage</MemberRole>
+  <MemberCaseRole>Garage</MemberCaseRole>
+  <FirstName>DefaultUser</FirstName>
+  <LastName>MM-O-F5AF93AF</LastName>
+  <CompanyName>Compliance Shop 86</CompanyName>
+  <MemberLoginId>MM-O-F5AF93AFDefaultUser</MemberLoginId>
+  <CustomerId>380296</CustomerId>
+  <ExternalOrganisationId>SHPFA86</ExternalOrganisationId>
+  <RootOrganizationID>MM-O-F5AF93AF</RootOrganizationID>
+  <ContactPersonId>MM-P-68889880EE1E0220AC</ContactPersonId>
+  <ContactPersonDescription>MM-O-F5AF93AF DefaultUser</ContactPersonDescription>
+  <CountryOrganizationId>US</CountryOrganizationId>
+  <CountryCode>US</CountryCode>
+  <MemberKind>Person</MemberKind>
+ </PartnerSender>
+ <PartnerReceiver>
+  <ItemId>42382F72-0691-8363-306A-8E42D19BF106</ItemId>
+  <MemberId>MM-O-754AD03B</MemberId>
+  <ParentId>MM-O-8559824F</ParentId>
+  <MemberRole>Insurance</MemberRole>
+  <MemberCaseRole>Insurance</MemberCaseRole>
+  <CompanyName>San Marcos Office</CompanyName>
+  <TaxNumber>-</TaxNumber>
+  <CommunicationDetailList>
+   <CommunicationDetail>
+    <Role>EMail1</Role>
+    <Entry>teresa.yedra@audaexplore.com</Entry>
+   </CommunicationDetail>
+  </CommunicationDetailList>
+  <AddressList>
+   <Address>
+    <AddressRole>Business</AddressRole>
+    <Country>US</Country>
+   </Address>
+  </AddressList>
+  <CustomerId>490300</CustomerId>
+  <ExternalOrganisationId>ComplianceInsC.WestRegion10.SMOffice</ExternalOrganisationId>
+  <RootOrganizationID>MM-O-2635F46F</RootOrganizationID>
+  <ContactPersonId>MM-P-2ECBF9EDA02502A46E</ContactPersonId>
+  <ContactPersonDescription>MM-O-754AD03B DefaultUser</ContactPersonDescription>
+  <CountryOrganizationId>US</CountryOrganizationId>
+  <CountryCode>US</CountryCode>
+  <MemberKind>Organization</MemberKind>
+ </PartnerReceiver>
+ <Priority>3</Priority>
+ <EventLogList>
+  <EventLog>
+   <Status>TaskUploaded</Status>
+   <Timestamp>2014-08-01T11:57:47.302</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>A task has been uploaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T11:57:47.303</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value7</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Created</Status>
+   <Timestamp>2014-08-01T11:57:47.558</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T11:57:48.661</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value7</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T11:57:48.930</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value7</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Merged</Status>
+   <Timestamp>2014-08-01T11:57:49.084</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Sent</Status>
+   <Timestamp>2014-08-01T11:57:49.092</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <InvolvedOrgId>MM-O-754AD03B</InvolvedOrgId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>TaskUploaded</Status>
+   <Timestamp>2014-08-01T11:58:31.309</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>A task has been uploaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T11:58:32.222</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.inprogress</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>false</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T11:58:34.076</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value7</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Merged</Status>
+   <Timestamp>2014-08-01T11:58:36.172</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Sent</Status>
+   <Timestamp>2014-08-01T11:58:36.183</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <InvolvedOrgId>MM-O-754AD03B</InvolvedOrgId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T11:58:36.227</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.inprogress</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>false</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T11:58:38.936</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.expert.partner.failed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>true</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T11:58:38.947</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.inprogress</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>false</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T11:58:39.696</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.expert.internal.conditionallypassed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>true</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>TaskDownloaded</Status>
+   <Timestamp>2014-08-01T12:02:44.228</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Case downloaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>TaskUploaded</Status>
+   <Timestamp>2014-08-01T12:06:43.727</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>A task has been uploaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T12:06:44.666</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value8</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T12:06:46.585</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value8</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T12:06:48.120</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value8</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Merged</Status>
+   <Timestamp>2014-08-01T12:06:49.066</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Sent</Status>
+   <Timestamp>2014-08-01T12:06:51.580</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <InvolvedOrgId>MM-O-754AD03B</InvolvedOrgId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Completed</Status>
+   <Timestamp>2014-08-01T12:06:51.746</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.estimating.estimate.completed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>true</IsBillable>
+   <IsViewable>true</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Completed</Status>
+   <Timestamp>2014-08-01T12:06:51.748</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.estimating.estimate.fcm</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>false</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>TaskUploaded</Status>
+   <Timestamp>2014-08-01T12:06:55.837</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>A task has been uploaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>TaskUploaded</Status>
+   <Timestamp>2014-08-01T12:07:00.749</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>A task has been uploaded</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>BusinessStatusChanged</Status>
+   <Timestamp>2014-08-01T12:07:01.764</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>Business Status Changed</Note>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <Field1>value8</Field1>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Merged</Status>
+   <Timestamp>2014-08-01T12:07:04.259</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T12:07:04.311</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.inprogress</Note>
+   <OrganizationId>MM-O-754AD03B</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>false</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T12:07:05.712</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.expert.partner.failed</Note>
+   <OrganizationId>MM-O-754AD03B</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>true</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Compliance</Status>
+   <Timestamp>2014-08-01T12:07:06.678</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <Note>event.compliance.rules.check.enterprise.internal.failed</Note>
+   <OrganizationId>MM-O-754AD03B</OrganizationId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+   <IsBillable>false</IsBillable>
+   <IsViewable>true</IsViewable>
+  </EventLog>
+  <EventLog>
+   <Status>Sent</Status>
+   <Timestamp>2014-08-01T12:07:07.107</Timestamp>
+   <User>MM-O-F5AF93AFDefaultUser</User>
+   <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+   <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+   <InvolvedOrgId>MM-O-754AD03B</InvolvedOrgId>
+   <IsOfflineEvent>false</IsOfflineEvent>
+   <RootOrganizationId>MM-O-F5AF93AF</RootOrganizationId>
+  </EventLog>
+ </EventLogList>
+ <BasicClaimData>
+  <AccidentData>
+   <ItemId>8088E0EC-7233-854B-C042-E407ED9CC23E</ItemId>
+   <Address>
+    <Latitude>0.0</Latitude>
+    <Longitude>0.0</Longitude>
+   </Address>
+  </AccidentData>
+  <ClaimDescriptionVehicle>
+   <ItemId>A1235B3B-F75F-FF0C-BD8B-7B6007CD56F1</ItemId>
+   <DamageCause>VehicleCollision</DamageCause>
+   <RepairAuthorised>Undefined</RepairAuthorised>
+   <TotalLoss>No</TotalLoss>
+   <TowingCosts Cur="USD">0</TowingCosts>
+  </ClaimDescriptionVehicle>
+  <Vehicle>
+   <VehicleIdentification>
+    <ItemId>3F8805BC-8D30-B0C9-5F3B-0674691F9F1C</ItemId>
+    <ManufacturerCodeAX>N1</ManufacturerCodeAX>
+    <ManufacturerName>DODGE</ManufacturerName>
+    <ModelCodeAX>31</ModelCodeAX>
+    <ModelName>CHALL</ModelName>
+    <Comment>2011 Dodge Challenger</Comment>
+    <USSubModelCode>
+     <Style>3</Style>
+     <Model>B</Model>
+     <Year>D</Year>
+     <Engine>B</Engine>
+    </USSubModelCode>
+    <ModelYear>2011</ModelYear>
+    <ReasonVINNotAvailable>Unreadable</ReasonVINNotAvailable>
+   </VehicleIdentification>
+   <VehicleAdmin>
+    <ItemId>473E9932-D2B5-DD1D-0B1A-B5BCEE01FD70</ItemId>
+    <RegistrationCountry>US</RegistrationCountry>
+    <CountryOfOrigin>US</CountryOfOrigin>
+    <VehicleOwner>
+     <ItemId>06458FB2-3263-AAAA-3DEA-4666963275DA</ItemId>
+     <MemberCaseRole>VehicleOwner</MemberCaseRole>
+     <AddressList>
+      <Address>
+       <Country>US</Country>
+       <CountryISO>US</CountryISO>
+      </Address>
+     </AddressList>
+    </VehicleOwner>
+    <PreviousDamageAmount>0</PreviousDamageAmount>
+    <VehicleMoveAuthorised>Undefined</VehicleMoveAuthorised>
+   </VehicleAdmin>
+   <VehicleModelOptions>
+    <Equipment>
+     <ModelOptionDetail>
+      <ItemId>7CAD325E-F65C-8BCB-2B16-E54B8D08BB2B</ItemId>
+      <MODesc Chg="false">Rem Trunk-L/Gate Release</MODesc>
+      <AutoSourceOEGCode>RTR</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>C4646FB0-68CF-C9F6-7FD4-53EE250C0263</ItemId>
+      <MODesc Chg="false">Aluminum/Alloy Wheels</MODesc>
+      <AutoSourceOEGCode>ALW</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>5A682163-36A5-55E9-E003-9765770B19BE</ItemId>
+      <MO>QD</MO>
+      <MODesc Chg="false">Bucket Seats</MODesc>
+      <AutoSourceOEGCode>BST</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>46C44C12-04D3-1D29-F247-27CAA6387975</ItemId>
+      <MO>9A</MO>
+      <MODesc Chg="false">Pwr Driver Lumbar Supp</MODesc>
+      <AutoSourceOEGCode>PDL</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>52FB1865-5BE7-67B1-48E3-E97DE8B1E987</ItemId>
+      <MO>4E</MO>
+      <MODesc Chg="false">AM/FM CD Player</MODesc>
+      <AutoSourceOEGCode>CD</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>6FD741FE-5AA2-85EF-28E3-64C16AA89FA7</ItemId>
+      <MODesc Chg="false">Floor Mats</MODesc>
+      <AutoSourceOEGCode>FLM</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>2ABC1A85-E2FD-C26A-461C-46D04FB88AAF</ItemId>
+      <MO>CI</MO>
+      <MODesc Chg="false">Climate Control For A/C</MODesc>
+      <AutoSourceOEGCode>AAC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>FA1A9C33-C530-6E1E-E6AC-CA81C67B1142</ItemId>
+      <MO>AL</MO>
+      <MODesc Chg="false">Anti-Lock Brakes</MODesc>
+      <AutoSourceOEGCode>ABS</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>BCDE1903-2477-095B-A93D-6E2C2B00AB76</ItemId>
+      <MO>2B</MO>
+      <MODesc Chg="false">Dual Airbags</MODesc>
+      <AutoSourceOEGCode>DAB</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>A51E4348-ED57-2341-F3A2-A2E88151AE5C</ItemId>
+      <MODesc Chg="false">Intermittent Wipers</MODesc>
+      <AutoSourceOEGCode>INW</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>1C5A0572-6CD6-3D45-D51E-A3D9A9774DF7</ItemId>
+      <MO>KD</MO>
+      <MODesc Chg="false">Keyless Entry System</MODesc>
+      <AutoSourceOEGCode>KES</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>20848F8C-F449-5D91-5908-9E0DA6F2425D</ItemId>
+      <MO>QE</MO>
+      <MODesc Chg="false">Cruise Control</MODesc>
+      <AutoSourceOEGCode>CC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>8A07A1AA-0425-5346-2955-F08774BF1918</ItemId>
+      <MO>VC</MO>
+      <MODesc Chg="false">Overhead Console</MODesc>
+      <AutoSourceOEGCode>OHC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>662B1C71-4FBC-8FF5-228C-613392EE02E5</ItemId>
+      <MO>KA</MO>
+      <MODesc Chg="false">Strg Wheel Radio Control</MODesc>
+      <AutoSourceOEGCode>SWC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>FE25614B-423A-03CB-8098-EA6CCD6FA07C</ItemId>
+      <MO>6C</MO>
+      <MODesc Chg="false">2nd Row Head Airbags</MODesc>
+      <AutoSourceOEGCode>RHA</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>1537B5EB-2DAB-DAC6-CB5E-16DACC160553</ItemId>
+      <MO>RR</MO>
+      <MODesc Chg="false">Rear Window Defroster</MODesc>
+      <AutoSourceOEGCode>DEF</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>8866BE8D-E075-3711-EF12-950677CBBA6E</ItemId>
+      <MO>5R</MO>
+      <MODesc Chg="false">Power Mirrors</MODesc>
+      <AutoSourceOEGCode>PM</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>A8161125-C07E-EB9E-947A-F73C59989AA6</ItemId>
+      <MO>FC</MO>
+      <MODesc Chg="false">Fog Lights</MODesc>
+      <AutoSourceOEGCode>FOG</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>EEF397F9-E5A6-52D3-C9B9-DA51E0A75E39</ItemId>
+      <MODesc Chg="false">Lighted Entry System</MODesc>
+      <AutoSourceOEGCode>LES</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>0B3C7459-9022-B035-A06C-B04AAABF39BF</ItemId>
+      <MO>4F</MO>
+      <MODesc Chg="false">Leather Shift Knob</MODesc>
+      <AutoSourceOEGCode>LSK</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>59E640E2-449C-92B0-577F-E1591D05B381</ItemId>
+      <MO>TV</MO>
+      <MODesc Chg="false">Traction Control System</MODesc>
+      <AutoSourceOEGCode>TCS</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>6B8D8C1C-9235-3FE5-45C2-D089823B23A8</ItemId>
+      <MODesc Chg="false">Trip Computer</MODesc>
+      <AutoSourceOEGCode>TCM</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>745E4118-A74F-ABEC-4D98-B2A27FAD5250</ItemId>
+      <MO>1A</MO>
+      <MODesc Chg="false">Power Drivers Seat</MODesc>
+      <AutoSourceOEGCode>ES</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>8899BD6A-26DF-A61A-4C90-5CF970B34B30</ItemId>
+      <MO>PS</MO>
+      <MODesc Chg="false">Power Steering</MODesc>
+      <AutoSourceOEGCode>PS</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>821A99A0-8731-0776-8789-5C81219190F5</ItemId>
+      <MO>T2</MO>
+      <MODesc Chg="false">Split Folding Rear Seat</MODesc>
+      <AutoSourceOEGCode>SFR</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>4790C731-8E58-0A7A-6779-CC0576D2F640</ItemId>
+      <MO>TG</MO>
+      <MODesc Chg="false">Tinted Glass</MODesc>
+      <AutoSourceOEGCode>TNT</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>EC4F25B1-5726-A23B-59EC-CB1F737DA6E2</ItemId>
+      <MO>CQ</MO>
+      <MODesc Chg="false">Stability Cntrl Suspensn</MODesc>
+      <AutoSourceOEGCode>SCS</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>B9FC7D24-5D71-810A-352F-1BE57C6D21E3</ItemId>
+      <MO>TT</MO>
+      <MODesc Chg="false"><![CDATA[Tilt & Telescopic Steer]]></MODesc>
+      <AutoSourceOEGCode>TTW</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>750CB698-782B-D0EA-C27D-14E761419345</ItemId>
+      <MO>6C</MO>
+      <MODesc Chg="false">Head Airbags</MODesc>
+      <AutoSourceOEGCode>HAB</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>82737194-B6BD-161A-02C7-68D6D955E9D2</ItemId>
+      <MO>PD</MO>
+      <MODesc Chg="false">Power Door Locks</MODesc>
+      <AutoSourceOEGCode>PL</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>B03C5A55-1D3A-86B0-A3DD-5CD2A7337F9D</ItemId>
+      <MO>PW</MO>
+      <MODesc Chg="false">Power Windows</MODesc>
+      <AutoSourceOEGCode>PW</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>4E21682F-99AC-FF72-7749-A105857CDD73</ItemId>
+      <MO>PB</MO>
+      <MODesc Chg="false">Power Brakes</MODesc>
+      <AutoSourceOEGCode>PB</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>2B83E6DA-EDE2-A1FC-A776-E22B866D80FD</ItemId>
+      <MO>AC</MO>
+      <MODesc Chg="false">Air Conditioning</MODesc>
+      <AutoSourceOEGCode>AC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>D8BD5D39-7F7C-F989-B083-BB70C44BB48D</ItemId>
+      <MODesc Chg="false">Halogen Headlights</MODesc>
+      <AutoSourceOEGCode>HAH</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>0ACEF6B6-D4A3-C9F4-9F7A-9E64A89CEB61</ItemId>
+      <MODesc Chg="false">Velour/Cloth Seats</MODesc>
+      <AutoSourceOEGCode>VEL</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>9CC047CA-42B8-7F3A-C22E-5FC860A148C4</ItemId>
+      <MO>9O</MO>
+      <MODesc Chg="false">Center Console</MODesc>
+      <AutoSourceOEGCode>CTC</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>BCEEC947-612A-F5B7-E273-E7452572E0F5</ItemId>
+      <MO>9M</MO>
+      <MODesc Chg="false">Leather Steering Wheel</MODesc>
+      <AutoSourceOEGCode>LSW</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>F1D77CB9-6461-E863-9EB4-27DB47D643FC</ItemId>
+      <MO>6A</MO>
+      <MODesc Chg="false">Side Airbags</MODesc>
+      <AutoSourceOEGCode>SAB</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>7C111333-7D71-27FE-5CF2-43977EB075FA</ItemId>
+      <MODesc Chg="false">MP3 Player</MODesc>
+      <AutoSourceOEGCode>MP3</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+     <ModelOptionDetail>
+      <ItemId>9A31C5A2-463C-E903-7681-90B2DA4EEEF3</ItemId>
+      <MODesc Chg="false">Tachometer</MODesc>
+      <AutoSourceOEGCode>TCH</AutoSourceOEGCode>
+      <AutoSourceOEGCategoryType>Option</AutoSourceOEGCategoryType>
+     </ModelOptionDetail>
+    </Equipment>
+   </VehicleModelOptions>
+   <VehicleDamage>
+    <ItemId>51F1128C-DF4A-BD51-9B4A-0AE10D0618FC</ItemId>
+    <VehicleDrivable>Undefined</VehicleDrivable>
+   </VehicleDamage>
+   <VehicleEngineering>
+    <ItemId>3F8805BC-8D30-B0C9-5F3B-0674691F9F1C</ItemId>
+    <MileageSource>Read</MileageSource>
+   </VehicleEngineering>
+   <Equipment>
+    <ItemId>4CB66CBF-1505-A85C-4903-79680680FF95</ItemId>
+    <ExteriorPaintKind>TwoStage</ExteriorPaintKind>
+    <InteriorPaintKind>TwoStage</InteriorPaintKind>
+   </Equipment>
+   <ReducedMarketValue>
+    <ItemId>1AEC5057-181D-E334-E5E4-AD7E1B1C3AAA</ItemId>
+    <ManualValue>0</ManualValue>
+   </ReducedMarketValue>
+   <VICVehicleIdentification>
+    <ItemId>3F8805BC-8D30-B0C9-5F3B-0674691F9F1C</ItemId>
+    <AutoSourceVehicleKey>196362</AutoSourceVehicleKey>
+    <AutoSourceAudatexCode>N1313BD</AutoSourceAudatexCode>
+    <NationalTypicalValue>20575</NationalTypicalValue>
+   </VICVehicleIdentification>
+   <VICVehicleEngineering>
+    <JBodyTypeCode>COU</JBodyTypeCode>
+    <JEngineTypeCode>6G3.6</JEngineTypeCode>
+    <JFuelTypeCode>G</JFuelTypeCode>
+    <JTransmissionTypeCode>AT-5</JTransmissionTypeCode>
+    <JTrimName>SE</JTrimName>
+    <MakeCode>DODGE</MakeCode>
+    <ModelCode>CHALL</ModelCode>
+    <NumberOfDoors>2</NumberOfDoors>
+    <NumberOfWheelsDrive>2</NumberOfWheelsDrive>
+    <ModelYear>2011</ModelYear>
+    <SizeCode>N/A</SizeCode>
+    <EngineNumber>301</EngineNumber>
+   </VICVehicleEngineering>
+   <InsuranceVehicleDescription>2011 Dodge Challenger</InsuranceVehicleDescription>
+  </Vehicle>
+  <PolicyData>
+   <ItemId>5931FDC0-995D-C817-C852-1479DF48657E</ItemId>
+   <PolicyHolder>
+    <ItemId>7F9EFDB1-43AC-8678-8C4A-D715B36870A4</ItemId>
+    <AddressList>
+     <Address>
+      <Country>US</Country>
+      <CountryISO>US</CountryISO>
+     </Address>
+    </AddressList>
+   </PolicyHolder>
+   <InsuranceCompany>
+    <ItemId>405B3E36-ED8C-7AC7-0B1D-9D28ABF140CD</ItemId>
+    <MemberId>MM-O-754AD03B</MemberId>
+    <AddressList>
+     <Address>
+      <Country>US</Country>
+      <CountryISO>US</CountryISO>
+     </Address>
+    </AddressList>
+    <ExternalOrganisationId>ComplianceInsC.WestRegion10.SMOffice</ExternalOrganisationId>
+    <RootOrganizationID>MM-O-2635F46F</RootOrganizationID>
+    <MemberKind>Organization</MemberKind>
+   </InsuranceCompany>
+   <ItemList>
+    <PolicyItem>
+     <PolicyItemType>DeductibleAmount</PolicyItemType>
+     <ExcessAmount Cur="USD">323</ExcessAmount>
+    </PolicyItem>
+   </ItemList>
+   <CoverageExcessAmount>323</CoverageExcessAmount>
+   <RentalCarCoverage>Undefined</RentalCarCoverage>
+  </PolicyData>
+  <ClaimMemberList>
+   <CaseMember>
+    <ItemId>EC27146C-366B-ABCD-2FE2-4E64A8897835</ItemId>
+    <MemberId>MM-O-754AD03B</MemberId>
+    <AddressList>
+     <Address>
+      <Country>US</Country>
+      <CountryISO>US</CountryISO>
+     </Address>
+    </AddressList>
+    <ExternalOrganisationId>ComplianceInsC.WestRegion10.SMOffice</ExternalOrganisationId>
+    <RootOrganizationID>MM-O-2635F46F</RootOrganizationID>
+    <MemberKind>Organization</MemberKind>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>B8D46504-16AB-B0AC-C9B5-A4B07A724F8E</ItemId>
+    <MemberCaseRole>Claimant</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>E6AE6E8F-A213-8981-2A86-762AE139993F</ItemId>
+    <MemberCaseRole>SecondPaymentRecipient</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>913A3760-A8D0-4DCE-02B9-E0321DD8948C</ItemId>
+    <MemberCaseRole>InsuranceClaimant</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>E0F60BB5-039B-AB39-FB9B-AAB87393428A</ItemId>
+    <MemberCaseRole>PaymentRecipient</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>71965402-31BA-ED67-A051-AB2825B95D52</ItemId>
+    <MemberCaseRole>SalvageDealer</MemberCaseRole>
+    <AddressList>
+     <Address>
+      <ZipCode>48108</ZipCode>
+     </Address>
+    </AddressList>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>B6FC6F28-410D-E108-7574-7B7E3983175D</ItemId>
+    <MemberCaseRole>InsuranceAgent</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>92C82EB3-7C08-CBC2-8D5A-581D2B829F66</ItemId>
+    <MemberCaseRole>Garage</MemberCaseRole>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>FC88B651-AFC2-EDC2-65BB-C2AECD9B147B</ItemId>
+    <MemberId>MM-P-68889880EE1E0220AC</MemberId>
+    <ParentId>MM-O-F5AF93AF</ParentId>
+    <MemberRole>Garage</MemberRole>
+    <MemberCaseRole>Assessor</MemberCaseRole>
+    <FirstName>DefaultUser</FirstName>
+    <LastName>MM-O-F5AF93AF</LastName>
+    <CompanyName>Compliance Shop 86</CompanyName>
+    <MemberLoginId>MM-O-F5AF93AFDefaultUser</MemberLoginId>
+    <CustomerId>380296</CustomerId>
+    <ExternalOrganisationId>SHPFA86</ExternalOrganisationId>
+    <ServiceProviderPartnerId>F5010SMS1</ServiceProviderPartnerId>
+    <RootOrganizationID>MM-O-F5AF93AF</RootOrganizationID>
+    <ContactPersonId>MM-P-68889880EE1E0220AC</ContactPersonId>
+    <ContactPersonDescription>MM-O-F5AF93AF DefaultUser</ContactPersonDescription>
+    <CountryOrganizationId>US</CountryOrganizationId>
+    <CountryCode>US</CountryCode>
+    <MemberKind>Person</MemberKind>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>EC4CEE8F-303E-4331-8BD5-BA51309444E7</ItemId>
+    <MemberCaseRole>Insurance</MemberCaseRole>
+    <MemberKind>Organization</MemberKind>
+   </CaseMember>
+   <CaseMember>
+    <ItemId>4C015108-E979-32FB-C29F-4E3C4BE686EA</ItemId>
+    <MemberCaseRole>ClaimAssistant</MemberCaseRole>
+    <MemberKind>Person</MemberKind>
+   </CaseMember>
+  </ClaimMemberList>
+  <RepairDetail>
+   <ItemId>A1478DB8-E1CB-57D8-3AD4-1F04A30F5536</ItemId>
+   <Repairer>
+    <ItemId>6DB5E972-888E-476D-D55F-7C98BB1FEC59</ItemId>
+    <MemberId>MM-O-F5AF93AF</MemberId>
+    <ParentId>US</ParentId>
+    <MemberRole>Garage</MemberRole>
+    <MemberCaseRole>Garage</MemberCaseRole>
+    <CompanyName>Compliance Shop 86</CompanyName>
+    <TaxNumber>-</TaxNumber>
+    <CommunicationDetailList>
+     <CommunicationDetail>
+      <Role>Phone1</Role>
+      <Entry>(858)794-6134</Entry>
+     </CommunicationDetail>
+    </CommunicationDetailList>
+    <AddressList>
+     <Address>
+      <AddressRole>Business</AddressRole>
+      <Line4>Suite 100</Line4>
+      <Line5>15030 Avenue of Science</Line5>
+      <State>CA</State>
+      <ZipCode>92128-</ZipCode>
+      <City>San Diego</City>
+      <Country>US</Country>
+      <StateISOCode>US_CA</StateISOCode>
+     </Address>
+    </AddressList>
+    <CustomerId>380296</CustomerId>
+    <ExternalOrganisationId>SHPFA86</ExternalOrganisationId>
+    <RootOrganizationID>MM-O-F5AF93AF</RootOrganizationID>
+    <ContactPersonId>MM-P-68889880EE1E0220AC</ContactPersonId>
+    <ContactPersonDescription>MM-O-F5AF93AF DefaultUser</ContactPersonDescription>
+    <CountryOrganizationId>US</CountryOrganizationId>
+    <CountryCode>US</CountryCode>
+    <MemberKind>Organization</MemberKind>
+   </Repairer>
+   <StorageCost>0</StorageCost>
+   <EstimateCompleteDateTime>2014-08-01T11:58:28.136</EstimateCompleteDateTime>
+  </RepairDetail>
+ </BasicClaimData>
+ <CalculationList>
+  <CLASSCalculation>
+   <ItemId>917A716C-ED86-86BE-1E58-50B21E92A772</ItemId>
+   <CalculationId>1406908708136</CalculationId>
+   <CLASSResult>
+    <ItemId>882F2511-8CAD-AA63-6049-1552375A40BE</ItemId>
+    <X9Values>
+     <GrandTotal Chg="false">780.4</GrandTotal>
+     <FCPartTot Chg="false">0</FCPartTot>
+     <FCLaborTot Chg="false">172.7</FCLaborTot>
+     <FCPaintTotMat Chg="false">95.7</FCPaintTotMat>
+     <FCDeduExcessAmnt Chg="false">323</FCDeduExcessAmnt>
+     <GrandTotalNFODedu Chg="false">0</GrandTotalNFODedu>
+     <GrandTotalWoExcessWTax Chg="false">457.4</GrandTotalWoExcessWTax>
+     <TotalPartsAmount Cur="USD">607.7</TotalPartsAmount>
+     <TotalOEMPartsAmount Cur="USD">0</TotalOEMPartsAmount>
+     <AlternativePartsSelectedAmount Cur="USD">512</AlternativePartsSelectedAmount>
+     <TotalRecycledPartsAmount Cur="USD">0</TotalRecycledPartsAmount>
+     <TotalBodyAmount Cur="USD">77</TotalBodyAmount>
+     <TotalFrameAmount Cur="USD">0</TotalFrameAmount>
+     <TotalRefinishAmount Cur="USD">95.7</TotalRefinishAmount>
+     <TotalSubletRepairAmount Cur="USD">0</TotalSubletRepairAmount>
+     <OriginalEquipmentSalvagePartAmount Cur="USD">0</OriginalEquipmentSalvagePartAmount>
+     <TotalMechanicalAmount Cur="USD">0</TotalMechanicalAmount>
+     <TotalBodyRepairHours>0</TotalBodyRepairHours>
+     <TotalBodyReplaceHours>7</TotalBodyReplaceHours>
+     <TotalMechanicalRepairHours>0</TotalMechanicalRepairHours>
+     <TotalMechanicalReplaceHours>0</TotalMechanicalReplaceHours>
+     <TotalRefinishRepairHours>0</TotalRefinishRepairHours>
+     <TotalRefinishReplaceHours>8.7</TotalRefinishReplaceHours>
+     <TotalFrameRepairHours>0</TotalFrameRepairHours>
+     <TotalFrameReplaceHours>0</TotalFrameReplaceHours>
+    </X9Values>
+    <CalculationDateTime>2014-07-31T19:59:02.000</CalculationDateTime>
+   </CLASSResult>
+   <RefCalculationId>1</RefCalculationId>
+   <CaseId>577F0A11-D85C-7902-D028-045F1A2A90CB</CaseId>
+   <AttachmentBinaryList>
+    <AttachmentBinary>
+     <ItemId>BFCAD591-6802-A47F-735D-71C87AAD1A78</ItemId>
+     <CreationDateTime>2014-08-01T11:58:31.321</CreationDateTime>
+     <BytesCount>179</BytesCount>
+     <FileName>AlternativePartsRules.xml</FileName>
+     <FileExtension>xml</FileExtension>
+     <Source AttType="xsd:anyURI">
+      <Attachment xsi:type="xsd:base64Binary" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">PEFsdGVybmF0aXZlUGFydHNTZWFyY2hDcml0ZXJpYUlucHV0IHhtbG5zPSJodHRwOi8vd3d3LmF1ZGF0ZXguY29tL1NBWElGIj4KICA8U2VhcmNoQ3JpdGVyaWE+CiAgICA8TmFtZT5HZW8gNDgxMDg8L05hbWU+CiAgPC9TZWFyY2hDcml0ZXJpYT4KPC9BbHRlcm5hdGl2ZVBhcnRzU2VhcmNoQ3JpdGVyaWFJbnB1dD4=</Attachment>
+     </Source>
+     <OrganizationId>MM-O-F5AF93AF</OrganizationId>
+     <Category>Reports</Category>
+     <CaseId>577F0A11-D85C-7902-D028-045F1A2A90CB</CaseId>
+     <UserId>MM-P-68889880EE1E0220AC</UserId>
+     <UserloginId>MM-O-F5AF93AFDefaultUser</UserloginId>
+     <AttachmentProperty>AlternativePartsRules</AttachmentProperty>
+     <Annotation>AlternateParts</Annotation>
+    </AttachmentBinary>
+   </AttachmentBinaryList>
+   <CalculationProgress>00000000000000000000000000000000</CalculationProgress>
+   <InProgress>true</InProgress>
+   <CLASSInputBase>
+    <CLASSInput>
+     <VehicleIdentification>
+      <ItemId>E67244C2-94D6-90D4-8B59-9D4EC733EDD0</ItemId>
+      <ManufacturerCodeAX>N1</ManufacturerCodeAX>
+      <ManufacturerName>Dodge</ManufacturerName>
+      <ModelCodeAX>31</ModelCodeAX>
+      <ModelName>Challenger</ModelName>
+      <SubModelCodeAX>03</SubModelCodeAX>
+      <SubModelName>SE    2 D    Coupe    2 WD    Gasoline</SubModelName>
+      <USSubModelCode>
+       <Style>3</Style>
+       <Model>B</Model>
+       <Year>D</Year>
+       <Engine>B</Engine>
+      </USSubModelCode>
+      <SelectedAutosourceOEGModelOptionCodes>AACABSAC ALWBSTCC CD CTCDABDEFES FLMFOGHABHAHINWKESLESLSKLSWMP3OHCPB PDLPL PM PS PW RHARTRSABSCSSFRSWCTCHTCMTCSTNTTTWVEL                                                                                                                                                                                                                                                                                        ALFPKATV1A 1</SelectedAutosourceOEGModelOptionCodes>
+     </VehicleIdentification>
+     <CustomOpCodeList>
+      <CustomOpCode>
+       <ItemId>2F40248C-3A31-66F1-7D85-2776E4122BDB</ItemId>
+       <OperationCode>N</OperationCode>
+       <Description>Additional Labor</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>71C9C16E-86B2-2F72-4127-F6E53DE15347</ItemId>
+       <OperationCode>ET</OperationCode>
+       <Description>Partial Replace</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D3776C2D-CF71-C87D-C712-6A3340FB807E</ItemId>
+       <OperationCode>RI</OperationCode>
+       <Description><![CDATA[R & I Assembly]]></Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>C8DB1C02-CA99-0063-1CF7-D8428FA6E084</ItemId>
+       <OperationCode>EA</OperationCode>
+       <Description>Replace CAPA Cert.</Description>
+       <Hidden>No</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>E74FE76C-2E92-881E-4D80-132527ABB53D</ItemId>
+       <OperationCode>EU</OperationCode>
+       <Description>Replace Recycled</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>3DD9540A-2360-05F0-27C4-6C2B4790BB35</ItemId>
+       <OperationCode>AA</OperationCode>
+       <Description>Appearance Allowance</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>19E2C3B6-1B8D-1133-7BFD-3A89DDE941CC</ItemId>
+       <OperationCode>NG</OperationCode>
+       <Description>Replace NAGS</Description>
+       <Hidden>No</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>A90B056C-8E86-A22C-1DFF-B23344AFA2A3</ItemId>
+       <OperationCode>TT</OperationCode>
+       <Description>Two-Tone</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D714B23E-A642-94E6-77D9-2FA28FAFDFB0</ItemId>
+       <OperationCode>TE</OperationCode>
+       <Description>OEM Part for Partial Replace</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>057A05B6-0B80-B065-BFB9-0DA7623FA6D5</ItemId>
+       <OperationCode>IT</OperationCode>
+       <Description>Partial Repair</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>37F1BD85-77F5-5819-49CA-F90BB392A3E2</ItemId>
+       <OperationCode>BR</OperationCode>
+       <Description>Blend Refinish</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>C64F08E6-8AD5-FF6C-4623-CF0A3319EBAB</ItemId>
+       <OperationCode>DR</OperationCode>
+       <Description>Paintless Dent Repair</Description>
+       <Hidden>No</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>2448116E-F8F8-4EFD-4BCD-FC478D96A92B</ItemId>
+       <OperationCode>E</OperationCode>
+       <Description>Replace OEM</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D6B2B79D-8B99-7C2B-669F-C3AD95C846DD</ItemId>
+       <OperationCode>PM</OperationCode>
+       <Description>Replace Remanufactured / Rebuilt</Description>
+       <Hidden>No</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>9C445F16-EAC8-46F2-72A9-58F2578F9DEB</ItemId>
+       <OperationCode>OE</OperationCode>
+       <Description>Replace OE Surplus</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>DA4391D9-A3C7-8809-F190-B97E752D4A41</ItemId>
+       <OperationCode>L</OperationCode>
+       <Description>Refinish</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>06B8B065-69CA-F63C-12C2-1DC029911C63</ItemId>
+       <OperationCode>UC</OperationCode>
+       <Description>Replace Reconditioned</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>EEC7DFD5-4799-16E2-0B55-9E0E39216567</ItemId>
+       <OperationCode>EP</OperationCode>
+       <Description>Replace Economy</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D62B2702-43D3-DC48-CAAE-E3898A0BBB4E</ItemId>
+       <OperationCode>PC</OperationCode>
+       <Description>Replace Reconditioned</Description>
+       <Hidden>No</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>F1AD262A-0EF4-E61E-02A8-C63338E898F4</ItemId>
+       <OperationCode>P</OperationCode>
+       <Description>Check</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>287CA640-C9FF-CDEA-44B0-B262826847D4</ItemId>
+       <OperationCode>SB</OperationCode>
+       <Description>Sublet Repair</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>EA5F6783-508E-E5BD-E284-A1696639E8C1</ItemId>
+       <OperationCode>RP</OperationCode>
+       <Description>Related Prior Damage</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>C0CE24E6-8DD1-FC5D-2C8D-6881EDD8CDF3</ItemId>
+       <OperationCode>UM</OperationCode>
+       <Description>Replace Remanufactured / Rebuilt</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>AC31CCB2-4887-0D6B-4FE8-7C702FDA6B79</ItemId>
+       <OperationCode>UE</OperationCode>
+       <Description>Replace OE Surplus</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D7E057F0-697A-79A9-1228-28CDCD27D17F</ItemId>
+       <OperationCode>EC</OperationCode>
+       <Description>Replace Economy</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>08AD78EC-0839-365B-CC47-8AE0AE034147</ItemId>
+       <OperationCode>I</OperationCode>
+       <Description>Repair</Description>
+       <Hidden>Undefined</Hidden>
+      </CustomOpCode>
+      <CustomOpCode>
+       <ItemId>D5262E1C-7617-38CA-E82B-6C0256454B6B</ItemId>
+       <OperationCode>CG</OperationCode>
+       <Description>Chip Guard</Description>
+       <Hidden>Yes</Hidden>
+      </CustomOpCode>
+      <Size>27</Size>
+     </CustomOpCodeList>
+     <DamageLines>
+      <CLASSLineItem>
+       <ItemId>4FEDF05F-7FFF-654D-7E82-0B521A9D1E07</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>7</LineNumber>
+       <SequenceNumber>7</SequenceNumber>
+       <SectionId>W00</SectionId>
+       <OperationCode>L</OperationCode>
+       <GuideNumber>566</GuideNumber>
+       <Description>Cover,Rear Bumper</Description>
+       <UserDefinedLaborRate>4</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>Y012</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>27</OriginalWorkUnits>
+       <SystemLaborRate>4</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>912CC0B0-FBED-1421-4B8B-79B8247E3EC9</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>4</LineNumber>
+       <SequenceNumber>4</SequenceNumber>
+       <SectionId>A00</SectionId>
+       <OperationCode>RP</OperationCode>
+       <GuideNumber>8</GuideNumber>
+       <Description>Cover,Front End</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>C074</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>0</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>9D70EFCF-87B0-B143-3B64-031C4D512A08</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>10</LineNumber>
+       <SequenceNumber>10</SequenceNumber>
+       <SectionId>W00</SectionId>
+       <OperationCode>RP</OperationCode>
+       <GuideNumber>566</GuideNumber>
+       <Description>Cover,Rear Bumper</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>Y012</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>0</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>C0325094-F86A-7D0E-E4F8-7A9172D4B735</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>1</LineNumber>
+       <SequenceNumber>1</SequenceNumber>
+       <SectionId>A00</SectionId>
+       <OperationCode>L</OperationCode>
+       <GuideNumber>-8</GuideNumber>
+       <Description>Cover,Front End</Description>
+       <UserDefinedLaborRate>4</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>C074</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>41</OriginalWorkUnits>
+       <MessageCode>13</MessageCode>
+       <SystemLaborRate>4</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>2951F1FE-9701-939F-9288-3FAFC96F60F0</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>8</LineNumber>
+       <SequenceNumber>8</SequenceNumber>
+       <SectionId>W00</SectionId>
+       <OperationCode>N</OperationCode>
+       <GuideNumber>566</GuideNumber>
+       <Description><![CDATA[Rear Bumper Cover R&I]]></Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>Y007</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>16</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>22044EE5-5E6C-F7E3-D5D8-920A9094CF1F</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>6</LineNumber>
+       <SequenceNumber>6</SequenceNumber>
+       <SectionId>W00</SectionId>
+       <OperationCode>EP</OperationCode>
+       <GuideNumber>566</GuideNumber>
+       <Description>Cover,Rear Bumper</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>Y012</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">512</OriginalPartPrice>
+       <OriginalWorkUnits>31</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>06C4946A-AA72-C844-43B1-87D8CA281F96</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>9</LineNumber>
+       <SequenceNumber>9</SequenceNumber>
+       <SectionId>W00</SectionId>
+       <OperationCode>AA</OperationCode>
+       <GuideNumber>566</GuideNumber>
+       <Description>Cover,Rear Bumper</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>Y012</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>0</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>2C8C488E-2FFD-4B1C-DE61-E5EF729B8EE4</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>5</LineNumber>
+       <SequenceNumber>5</SequenceNumber>
+       <SectionId>A00</SectionId>
+       <OperationCode>RI</OperationCode>
+       <GuideNumber>8</GuideNumber>
+       <Description><![CDATA[Front End Cover R & I]]></Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>C074</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>19</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>1E9CF0BC-7077-E3C7-C969-03D817D58C6F</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>2</LineNumber>
+       <SequenceNumber>2</SequenceNumber>
+       <SectionId>A00</SectionId>
+       <OperationCode>EC</OperationCode>
+       <GuideNumber>8</GuideNumber>
+       <Description>Cover,Front End</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>C074</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>39</OriginalWorkUnits>
+       <MessageCode>46</MessageCode>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+      <CLASSLineItem>
+       <ItemId>0AAB7B5D-23D0-1C62-3F1E-BA9D90A3C720</ItemId>
+       <LineItemQualifier>StandardPosition</LineItemQualifier>
+       <LineNumber>3</LineNumber>
+       <SequenceNumber>3</SequenceNumber>
+       <SectionId>A00</SectionId>
+       <OperationCode>AA</OperationCode>
+       <GuideNumber>8</GuideNumber>
+       <Description>Cover,Front End</Description>
+       <UserDefinedLaborRate>1</UserDefinedLaborRate>
+       <Adjustment>0</Adjustment>
+       <RepairSequence>C074</RepairSequence>
+       <PreviousDamage>No</PreviousDamage>
+       <NewForOldAdjustment>0</NewForOldAdjustment>
+       <PartPriceTaxable>Yes</PartPriceTaxable>
+       <LaborTaxable>Yes</LaborTaxable>
+       <RelatesToStandardPositionLineNumber>0</RelatesToStandardPositionLineNumber>
+       <OriginalPartPrice Cur="USD" Chg="false">0</OriginalPartPrice>
+       <OriginalWorkUnits>0</OriginalWorkUnits>
+       <SystemLaborRate>1</SystemLaborRate>
+      </CLASSLineItem>
+     </DamageLines>
+     <ControlData>
+      <CountryCodeISO>840</CountryCodeISO>
+      <LanguageCodeISO>EN</LanguageCodeISO>
+      <InputCurrencyCode>USD</InputCurrencyCode>
+      <OutputCurrencyCode>USD</OutputCurrencyCode>
+      <ProjectCode>HM</ProjectCode>
+      <ExteriorRefinishCode>TwoStage</ExteriorRefinishCode>
+      <InteriorRefinishCode>None</InteriorRefinishCode>
+     </ControlData>
+     <Rates>
+      <StandardRates>
+       <SheetRate Cur="USD" Chg="false">11</SheetRate>
+       <MechRate Cur="USD" Chg="false">11</MechRate>
+       <FrameRate Cur="USD" Chg="false">11</FrameRate>
+       <RefinishRate Cur="USD" Chg="false">11</RefinishRate>
+       <PaintMaterialRate Cur="USD" Chg="false">11</PaintMaterialRate>
+       <ShopRate Cur="USD" Chg="false">0</ShopRate>
+      </StandardRates>
+      <Adjustments>
+       <DiscountRate>1.1</DiscountRate>
+       <DiscountType>Discount</DiscountType>
+       <WindShieldOEM>0</WindShieldOEM>
+       <WindShieldNAGS>0</WindShieldNAGS>
+       <SideWindowOEM>0</SideWindowOEM>
+       <SideWindowNAGS>0</SideWindowNAGS>
+       <RearWindowOEM>0</RearWindowOEM>
+       <RearWindowNAGS>0</RearWindowNAGS>
+       <OEMGlassPreference>NAGS</OEMGlassPreference>
+       <OEMAdjustmentToOESurplus>No</OEMAdjustmentToOESurplus>
+       <RefinishPercentage>75</RefinishPercentage>
+      </Adjustments>
+      <AdditionalCharges>
+       <TowingCosts Cur="USD" Chg="false">0</TowingCosts>
+       <StorageCosts Cur="USD" Chg="false">0</StorageCosts>
+       <OtherCosts Cur="USD" Chg="false">0</OtherCosts>
+      </AdditionalCharges>
+      <OtherSettings>
+       <LaborBetterment>No</LaborBetterment>
+       <DeductibleAmount Chg="false">323</DeductibleAmount>
+       <PartsBetterment>Yes</PartsBetterment>
+       <NonRefinishLaborBetterment>No</NonRefinishLaborBetterment>
+       <RefinishLaborBetterment>Yes</RefinishLaborBetterment>
+      </OtherSettings>
+      <AmericanTaxRates>
+       <TaxOnPartsFlag>Yes</TaxOnPartsFlag>
+       <TaxOnLaborFlag>No</TaxOnLaborFlag>
+       <TaxOnTowingFlag>No</TaxOnTowingFlag>
+       <TaxOnStorageFlag>No</TaxOnStorageFlag>
+       <TaxOnRefLaborFlag>No</TaxOnRefLaborFlag>
+       <PartTaxRate>0</PartTaxRate>
+       <LaborTaxRate>0</LaborTaxRate>
+       <StorageTaxRate>0</StorageTaxRate>
+       <SubletTaxRate>0</SubletTaxRate>
+       <TowingTaxRate>0</TowingTaxRate>
+       <TaxOnPaintFlag>No</TaxOnPaintFlag>
+       <TaxOnSubletFlag>No</TaxOnSubletFlag>
+       <BettermentTaxable>No</BettermentTaxable>
+      </AmericanTaxRates>
+     </Rates>
+     <PaintThresholds>
+      <PaintMaterial Chg="false">500</PaintMaterial>
+     </PaintThresholds>
+     <PreviousCalculationData>
+      <PriorEstimateTotal Cur="USD" Chg="false">0</PriorEstimateTotal>
+     </PreviousCalculationData>
+    </CLASSInput>
+    <Rates>
+     <StandardRates>
+      <SheetRate Cur="USD" Chg="false">11</SheetRate>
+      <MechRate Cur="USD" Chg="false">11</MechRate>
+      <FrameRate Cur="USD" Chg="false">11</FrameRate>
+      <RefinishRate Cur="USD" Chg="false">11</RefinishRate>
+      <PaintMaterialRate Cur="USD" Chg="false">11</PaintMaterialRate>
+      <ShopRate Cur="USD" Chg="false">0</ShopRate>
+     </StandardRates>
+     <Adjustments>
+      <DiscountRate>1.1</DiscountRate>
+      <DiscountType>Discount</DiscountType>
+      <WindShieldOEM>0</WindShieldOEM>
+      <WindShieldNAGS>0</WindShieldNAGS>
+      <SideWindowOEM>0</SideWindowOEM>
+      <SideWindowNAGS>0</SideWindowNAGS>
+      <RearWindowOEM>0</RearWindowOEM>
+      <RearWindowNAGS>0</RearWindowNAGS>
+      <OEMGlassPreference>NAGS</OEMGlassPreference>
+      <OEMAdjustmentToOESurplus>No</OEMAdjustmentToOESurplus>
+      <RefinishPercentage>75</RefinishPercentage>
+     </Adjustments>
+     <AdditionalCharges>
+      <TowingCosts Cur="USD" Chg="false">0</TowingCosts>
+      <StorageCosts Cur="USD" Chg="false">0</StorageCosts>
+      <OtherCosts Cur="USD" Chg="false">0</OtherCosts>
+     </AdditionalCharges>
+     <OtherSettings>
+      <LaborBetterment>No</LaborBetterment>
+      <DeductibleAmount Chg="false">323</DeductibleAmount>
+      <PartsBetterment>Yes</PartsBetterment>
+      <NonRefinishLaborBetterment>No</NonRefinishLaborBetterment>
+      <RefinishLaborBetterment>Yes</RefinishLaborBetterment>
+     </OtherSettings>
+     <AmericanTaxRates>
+      <Tier1TaxThreshold Chg="false">5000</Tier1TaxThreshold>
+      <Tier2TaxThreshold Chg="false">10000</Tier2TaxThreshold>
+      <TaxOnPartsFlag>Yes</TaxOnPartsFlag>
+      <TaxOnLaborFlag>No</TaxOnLaborFlag>
+      <TaxOnTowingFlag>No</TaxOnTowingFlag>
+      <TaxOnStorageFlag>No</TaxOnStorageFlag>
+      <TaxOnRefLaborFlag>No</TaxOnRefLaborFlag>
+      <PartTaxRate>0</PartTaxRate>
+      <LaborTaxRate>0</LaborTaxRate>
+      <StorageTaxRate>0</StorageTaxRate>
+      <SubletTaxRate>0</SubletTaxRate>
+      <TowingTaxRate>0</TowingTaxRate>
+      <TaxOnPaintFlag>No</TaxOnPaintFlag>
+      <TaxOnSubletFlag>No</TaxOnSubletFlag>
+      <BettermentTaxable>No</BettermentTaxable>
+     </AmericanTaxRates>
+    </Rates>
+    <PaintThresholds>
+     <TwoStageExterior>2.5</TwoStageExterior>
+     <PaintMaterial Chg="false">500</PaintMaterial>
+    </PaintThresholds>
+    <ClaimStatus>Estimate</ClaimStatus>
+   </CLASSInputBase>
+   <ClaimStatus>Estimate</ClaimStatus>
+   <CompleteDateTime>2014-08-01T11:58:28.136</CompleteDateTime>
+  </CLASSCalculation>
+ </CalculationList>
+ <ResponsibleUserId>MM-P-68889880EE1E0220AC</ResponsibleUserId>
+ <TaskStatus>Sent</TaskStatus>
+ <LastUpdateDateTime>2014-08-01T11:58:34.075</LastUpdateDateTime>
+ <UpdateBy>MM-P-68889880EE1E0220AC</UpdateBy>
+ <TaskProgress>10000001000001000000000000000000000000000000000000000</TaskProgress>
+ <ResponsibleUserLoginId>MM-O-F5AF93AFDefaultUser</ResponsibleUserLoginId>
+ <ResponsibleOrganizationId>MM-O-F5AF93AF</ResponsibleOrganizationId>
+ <Inspection>
+  <ItemId>31DAF677-A19A-1CDF-CFF3-AADADB3A5AC1</ItemId>
+  <TestDrive>Undefined</TestDrive>
+  <InspectionLocation>
+   <ItemId>037F6A85-45AC-521E-3E75-D962622B6931</ItemId>
+   <MemberKind>Location</MemberKind>
+  </InspectionLocation>
+  <ConductedDate>2014-08-01T11:55:15.000</ConductedDate>
+  <InspectionKind>CatastrophyDriveIn</InspectionKind>
+ </Inspection>
+ <ForeignCaseId>91077020</ForeignCaseId>
+ <TaskRole>ClaimNotificationVehicle</TaskRole>
+ <ResponsibleRootOrganizationId>MM-O-F5AF93AF</ResponsibleRootOrganizationId>
+ <Creator>MM-P-68889880EE1E0220AC</Creator>
+ <CreationTime>2014-08-01T11:58:34.075</CreationTime>
+ <LastViewedDateTime>2014-08-01T11:58:34.075</LastViewedDateTime>
+ <ViewedBy>MM-P-68889880EE1E0220AC</ViewedBy>
+ <TotalAttachmentBytesCount>0</TotalAttachmentBytesCount>
+ <TotalAttachmentBytesCountBase64>0</TotalAttachmentBytesCountBase64>
+ <NumberOfAttachments>0</NumberOfAttachments>
+ <HasAttachment>false</HasAttachment>
+ <HasCalculation>false</HasCalculation>
+ <LastCalculationGrandTotal Chg="false">780.4</LastCalculationGrandTotal>
+ <Currency>USD</Currency>
+ <BusinessProcess>Claims.START</BusinessProcess>
+ <CreatorLoginId>MM-O-F5AF93AFDefaultUser</CreatorLoginId>
+ <ClaimStatus>Estimate</ClaimStatus>
+ <LineOfBusiness>297</LineOfBusiness>
+ <BusinessStatusKind>value7</BusinessStatusKind>
+ <IsMultipleParties>true</IsMultipleParties>
+ <ConfigurationId>60FEC98C-AE24-7FD4-59D9-2915267089C6</ConfigurationId>
+</Task>
