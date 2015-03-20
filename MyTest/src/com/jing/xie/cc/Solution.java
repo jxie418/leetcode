@@ -1,7 +1,5 @@
 package com.jing.xie.cc;
 
-import java.util.LinkedList;
-
 import com.jing.xie.ListNode;
 
 public class Solution {
