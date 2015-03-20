@@ -524,13 +524,9 @@ public class Solution {
     }
     int minPrice = Integer.MAX_VALUE;
     int max = 0;
-    int diff = 0;
     for (int price : prices) {
-      if (minPrice > price) {
-        minPrice = price;
-      }
-      diff = price - minPrice;
-      max = Math.max(max, diff);
+      minPrice = Math.min(minPrice, price);
+      max = Math.max(max, price - minPrice);
     }
     return max;
   }
