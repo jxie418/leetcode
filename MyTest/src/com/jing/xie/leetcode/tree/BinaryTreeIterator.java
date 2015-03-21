@@ -5,19 +5,18 @@ import java.util.Stack;
 
 import com.jing.xie.TreeNode;
 
-
-
 /**
- * @author JXie
- * Implement iterator of Binary Search Tree
+ * @author JXie Implement iterator of Binary Search Tree
  */
 public class BinaryTreeIterator implements Iterator {
   private Stack<TreeNode> stack = new Stack<TreeNode>();
   private TreeNode root;
+
   public BinaryTreeIterator(TreeNode root) {
     this.root = root;
     stack = new Stack<TreeNode>();
   }
+
   @Override
   public boolean hasNext() {
     return !stack.isEmpty() || root != null;
@@ -25,7 +24,7 @@ public class BinaryTreeIterator implements Iterator {
 
   @Override
   public TreeNode next() {
-    while(root != null) {
+    while (root != null) {
       stack.push(root);
       root = root.left;
     }

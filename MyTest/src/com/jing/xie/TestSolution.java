@@ -1,6 +1,8 @@
 package com.jing.xie;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,8 +14,6 @@ import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import java.nio.*;
 /**
  * @author JXie
  *
@@ -426,5 +426,18 @@ public class TestSolution {
   public void largestNumber() {
     int[] num = {3, 30, 34, 5, 9};
     assertEquals(Solution.largestNumber(num),"9534330");
+  }
+
+  @Test
+  public void testQueue() {
+    // 9,3,2,4,8
+    // Solution.addDataTo();
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    list.add(9);
+    list.add(3);
+    list.add(2);
+    list.add(4);
+    list.add(8);
+    assertEquals(4, Solution.kthLargestElement(3, list));
   }
 }

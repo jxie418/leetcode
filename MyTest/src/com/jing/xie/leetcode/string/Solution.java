@@ -5,19 +5,15 @@ import java.util.Map;
 
 public class Solution {
   /**
-   *   
-    0.16  
-6 ) 1.00
-    0 
-    1 0       <-- Remainder=1, mark 1 as seen at position=0.
-    - 6 
-      40      <-- Remainder=4, mark 4 as seen at position=1.
-    - 36 
-       4      <-- Remainder=4 was seen before at position=1, so the fractional part which is 16 starts repeating at position=1 => 1(6).
-The key insight here is to notice that once the remainder starts repeating, so does the divided result.
-You will need a hash table that maps from the remainder to its position of the fractional part. Once you found a repeating remainder, you may enclose the reoccurring fractional part with parentheses by consulting the position from the table.
-The remainder could be zero while doing the division. That means there is no repeating fractional part and you should stop right away.
-Just like the question Divide Two Integers, be wary of edge case such as negative fractions and nasty extreme case such as -2147483648 / -1.
+   * 
+   0.16 6 ) 1.00 0 1 0 <-- Remainder=1, mark 1 as seen at position=0. - 6 40 <-- Remainder=4, mark 4 as seen at
+   * position=1. - 36 4 <-- Remainder=4 was seen before at position=1, so the fractional part which is 16 starts
+   * repeating at position=1 => 1(6). The key insight here is to notice that once the remainder starts repeating, so
+   * does the divided result. You will need a hash table that maps from the remainder to its position of the fractional
+   * part. Once you found a repeating remainder, you may enclose the reoccurring fractional part with parentheses by
+   * consulting the position from the table. The remainder could be zero while doing the division. That means there is
+   * no repeating fractional part and you should stop right away. Just like the question Divide Two Integers, be wary of
+   * edge case such as negative fractions and nasty extreme case such as -2147483648 / -1.
    */
   public static String fractionToDecimal(int numerator, int denominator) {
     if (numerator == 0) {
@@ -55,6 +51,7 @@ Just like the question Divide Two Integers, be wary of edge case such as negativ
     }
     return sb.toString();
   }
+
   /**
    * 
    * @param s
@@ -65,35 +62,35 @@ Just like the question Divide Two Integers, be wary of edge case such as negativ
       return false;
     }
     s = s.trim();
-    int i = 0 ;
+    int i = 0;
     int n = s.length();
     boolean isNumber = false;
-    if (i < n && (s.charAt(i) == '+' || s.charAt(i)=='-')) {
+    if (i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')) {
       i++;
     }
-    while(i < n && Character.isDigit(s.charAt(i))) {
+    while (i < n && Character.isDigit(s.charAt(i))) {
       i++;
       isNumber = true;
     }
-    if (i < n && s.charAt(i) =='.') {
+    if (i < n && s.charAt(i) == '.') {
       i++;
-      while(i < n && Character.isDigit(s.charAt(i))) {
+      while (i < n && Character.isDigit(s.charAt(i))) {
         i++;
         isNumber = true;
       }
     }
     if (isNumber && i < n && s.charAt(i) == 'e') {
       i++;
-      isNumber= false;
-      if (i < n && (s.charAt(i)=='+' || s.charAt(i)=='-')) {
+      isNumber = false;
+      if (i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')) {
         i++;
       }
-      while(i < n && Character.isDigit(s.charAt(i))) {
+      while (i < n && Character.isDigit(s.charAt(i))) {
         i++;
         isNumber = true;
       }
     }
     return isNumber && i == n;
   }
-  
+
 }

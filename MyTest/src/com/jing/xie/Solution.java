@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -23,6 +22,26 @@ public class Solution {
   private static PriorityQueue<Integer> queue;
   private static TreeMap<Integer, String> map;
 
+  public static int kthLargestElement(int k, ArrayList<Integer> numbers) {
+    PriorityQueue<Integer> queue = new PriorityQueue<Integer>(k, new Comparator<Integer>() {
+      public int compare(Integer i1, Integer i2) {
+        return i1.compareTo(i2);
+      }
+    });
+    for (int i = 0; i < numbers.size(); i++) {
+      if (queue.size() < k) {
+        queue.add(numbers.get(i));
+      } else {
+        Integer p = queue.peek();
+        if (numbers.get(i) > p) {
+          queue.poll();
+          queue.add(numbers.get(i));
+        }
+      }
+    }
+    return queue.isEmpty() ? 0 : queue.peek().intValue();
+  }
+
   public static void addDataTo() {
     queue = new PriorityQueue<Integer>();
     queue.offer(1);
@@ -35,25 +54,25 @@ public class Solution {
       System.out.println(queue.poll());
     }
 
-    map = new TreeMap<Integer, String>();
+    /*map = new TreeMap<Integer, String>();
     map.put(1, "K");
     map.put(3, "A");
     map.put(4, "D");
     map.put(8, "B");
     map.put(10, "C");
-    /*
+    
     while (!map.isEmpty()) {
         Entry<Integer, String> pollFirstEntry = map.pollFirstEntry();
         System.out.println(pollFirstEntry.getKey()+":" + pollFirstEntry.getValue());
         
-    }*/
+    }
     Set<Integer> keys = map.descendingKeySet();
     Iterator<Integer> it = keys.iterator();
     while (it.hasNext()) {
       Integer next = it.next();
       String value = map.get(next);
       System.out.println(next + ":" + value);
-    }
+    }*/
   }
 
   public static void buble(int[] num) {
