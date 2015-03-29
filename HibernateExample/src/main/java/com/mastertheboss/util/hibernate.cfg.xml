@@ -22,6 +22,8 @@
  
      <mapping class="com.mastertheboss.domain.Employee" />
      <mapping class="com.mastertheboss.domain.Department" />
+     <mapping class="com.mastertheboss.domain.Stock" />
+     <mapping class="com.mastertheboss.domain.Category" />
  
  <!-- <mapping resource="com/mkyong/user/DBUser.hbm.xml"></mapping> -->
 </session-factory>
