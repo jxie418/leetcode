@@ -7,9 +7,11 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Set;
 
 import org.junit.Before;
@@ -439,5 +441,28 @@ public class TestSolution {
     list.add(4);
     list.add(8);
     assertEquals(4, Solution.kthLargestElement(3, list));
+  }
+  
+  @Test
+  public void testPriorityQueue() {
+	  int[] nums = {1,2,7,7,2};
+	  PriorityQueue<Integer> queue = new PriorityQueue<Integer>(1,
+				new Comparator<Integer>() {
+					@Override
+					public int compare(Integer i1, Integer i2) {
+						return i2 - i1;
+					}
+				});
+		for (int i = 0 ; i < nums.length; i++) {
+			if (queue.size() < 1) {
+				queue.offer(nums[i]);
+			} else {
+				System.out.println(queue.poll());
+				queue.offer(nums[i]);
+			}
+		}
+		while (!queue.isEmpty()) {
+		      System.out.println(queue.poll());
+		 }
   }
 }
