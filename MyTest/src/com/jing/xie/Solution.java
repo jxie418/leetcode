@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Random;
 import java.util.Set;
+import java.util.Stack;
 import java.util.TreeMap;
 
 /**
@@ -1533,4 +1535,154 @@ public class Solution {
       }
     }
   }
+  
+  public int evaluateExpression(String[] expression) {
+      // write your code here
+       
+      Stack<Integer> values = new Stack<Integer>();
+      Stack<String> ops = new Stack<String>();
+      for (int i = 0; i < expression.length; i++)
+      {
+          if (expression[i].trim().length() == 0)
+              continue;
+              
+          if (expression[i].compareTo("0") >= 0 && expression[i].compareTo("9") <= 0)
+          {
+              StringBuffer sbuf = new StringBuffer();
+              while (i < expression.length && expression[i].compareTo("0") >= 0 && expression[i].compareTo("9") <= 0)
+                  sbuf.append(expression[i++]);
+              values.push(Integer.parseInt(sbuf.toString()));
+          } else if (expression[i].equals("("))
+              ops.push(expression[i]);
+          else if (expression[i].equals(")")) {
+              while (ops.peek().equals("("))
+                values.push(applyOp(ops.pop(), values.pop(), values.pop()));
+              ops.pop();
+          } else if (expression[i].equals("+") || expression[i].equals("-") ||
+                   expression[i].equals("*")  || expression[i].equals("/")) {
+              while (!ops.empty() && hasPrecedence(expression[i], ops.peek()))
+                values.push(applyOp(ops.pop(), values.pop(), values.pop()));
+              ops.push(expression[i]);
+          }
+      }
+      while (!ops.empty())
+          values.push(applyOp(ops.pop(), values.pop(), values.pop()));
+      return values.pop();
+  }
+  
+
+  public static boolean hasPrecedence(String op1, String op2)
+  {
+      if (op2.equals("(")  || op2.equals(")"))
+          return false;
+      if ((op1.equals("*") || op1.equals("/")) && (op2.equals("+") || op2.equals("-")))
+          return false;
+      else
+          return true;
+  }
+
+  public static int applyOp(String op, int b, int a)
+  {
+      if (op.equals("+")) {
+          return a + b;
+      } else if (op.equals("-")) {
+          return a - b;
+      } else if(op.equals("*")) {
+          return a * b;
+      } else if (op.equals("/")) {
+          if (b == 0)
+              throw new UnsupportedOperationException("Cannot divide by zero");
+          return a / b;
+      }
+      return 0;
+  }
+  
+  public int[] printZMatrix(int[][] matrix) {
+      int m = matrix.length;
+      int n = matrix[0].length;
+      int [] res = new int[m * n];
+      int index = 0;
+      for (int i =0; i < m + n -1; ++i) {
+    	  if (i % 2 ==0) {
+    		  for(int y =0; y < n; ++y) {
+    			  if(m > i -y && i -y >=0) {
+    				  res[index++] =matrix[i - y][y]; 
+    			  }
+    		  }
+    	  } else {
+    		  for (int x = 0; x < m; ++x) {
+                  if (n > i - x && i - x >= 0) {
+                      res[index++] = matrix[x][i - x];
+                  }
+              }
+    	  }
+      }
+      return res;
+  }
+  
+  public ArrayList<Integer> subarraySum(int[] nums) {
+      int len = nums.length;
+      ArrayList<Integer> ret = new ArrayList<Integer>();
+      HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+      map.put(0, -1);
+      
+      int sum = 0;
+      for (int i = 0; i < len; i++) {
+          sum += nums[i];
+          if (map.containsKey(sum)) {
+              ret.add(map.get(sum) + 1);
+              ret.add(i);
+              return ret;
+          }
+          map.put(sum, i);
+      }
+      return ret;
+  }
+  public boolean hasRoute(ArrayList<DirectedGraphNode> graph, DirectedGraphNode s, DirectedGraphNode t) {
+	    Stack<DirectedGraphNode> stack = new Stack<DirectedGraphNode>();
+	    stack.push(s);
+	    while(!stack.isEmpty()) {
+	        DirectedGraphNode node = stack.pop();
+	        if (node.label == t.label) {
+	            return true;
+	        }
+	        for(DirectedGraphNode n : node.neighbors) {
+	            if (n.label == t.label) {
+	                return true;
+	            } else {
+	                stack.push(n);
+	            }
+	        }
+	    }
+	    return false;
+	}
+  
+  public boolean hasRouteBFS(ArrayList<DirectedGraphNode> graph, DirectedGraphNode s, DirectedGraphNode t) {
+	    Queue<DirectedGraphNode> queue = new LinkedList<DirectedGraphNode>();
+	    queue.offer(s);
+	    while(!queue.isEmpty()) {
+	        DirectedGraphNode node = queue.poll();
+	        if (node.label == t.label) {
+	            return true;
+	        }
+	        for(DirectedGraphNode n : node.neighbors) {
+	            if (n.label == t.label) {
+	                return true;
+	            } else {
+	                queue.offer(n);
+	            }
+	        }
+	    }
+	    return false;
+	}
+  
 }
+
+class DirectedGraphNode {
+    int label;
+     ArrayList<DirectedGraphNode> neighbors;
+     DirectedGraphNode(int x) {
+         label = x;
+         neighbors = new ArrayList<DirectedGraphNode>();
+     }
+ };
