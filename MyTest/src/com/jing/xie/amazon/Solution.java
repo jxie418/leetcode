@@ -3,6 +3,49 @@ package com.jing.xie.amazon;
 import java.util.Map.Entry;
 import java.util.*;
 public class Solution {
+	
+	
+  public List<List<Integer>> getAllSolutions() {
+	  List<List<Integer>> res = new ArrayList<List<Integer>>();
+	  int[] board = new int[8];
+	  for (int i = 0 ; i < board.length; i++) {
+		  board[i] = -1;
+	  }
+	  helper(board,0,res);
+	  return res;
+  }
+  
+  
+  void helper(int []board, int cur, List<List<Integer>> res) {
+	  if (cur == board.length) {
+		  res.add(getPosition(board));
+	  } else {
+		  for (int i = 0 ; i < board.length;i++) {
+			  board[cur] = i;
+			  if (isValid(board, cur)) {
+				   helper(board, cur+1, res);
+			  }
+			  board[cur] = -1;
+		  }
+	  }
+  }
+  
+  boolean isValid(int[] board, int cur) {
+	  for(int i = 0 ; i < cur; i++) {
+		  if (board[i] == board[cur] || Math.abs(board[i] - board[cur]) == cur - i) {
+			  return false;
+		  }
+	  }
+	  return true;
+  }
+List<Integer> getPosition(int [] board) {
+	List<Integer> res = new ArrayList<Integer>();
+	for(int i = 0; i < board.length;i++) {
+		res.add(board[i]);
+	}
+	return res;
+}
+	
   private Comparator cp = new ProductComparator();
   private Map<String,Integer> map = new TreeMap<String,Integer>(); 
   public void itemPurchased(String pid) {

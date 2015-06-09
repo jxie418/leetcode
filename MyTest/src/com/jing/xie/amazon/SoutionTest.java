@@ -26,4 +26,18 @@ public class SoutionTest {
     System.out.println(list.toArray());
   }
 
+  @Test
+  public void testNQueue() {
+	  Solution s =  new Solution();
+	  List<List<Integer>> res = s.getAllSolutions();
+	  
+	  for (int i = 0; i < res.size(); i++) {
+		  List<Integer> one = res.get(i);
+		  for (Integer v : one) {
+			  System.out.print(v);
+			  System.out.print(", ");
+		  }
+		  System.out.println();
+	  }
+  }
 }
