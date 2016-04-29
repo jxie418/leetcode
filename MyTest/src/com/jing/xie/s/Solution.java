@@ -409,7 +409,7 @@ public class Solution {
       printlnBoard(res, local, n);
     } else {
       for (int i = 0; i < n; i++) {
-        local[i] = cur;
+        local[cur] = i;
         if (isValid(local, cur)) {
           dfsNQueues(res, local, cur + 1, n);
         }

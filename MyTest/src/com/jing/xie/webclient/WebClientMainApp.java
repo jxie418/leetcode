@@ -16,6 +16,8 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  * @author jxie
@@ -29,15 +31,12 @@ public class WebClientMainApp {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		CloseableHttpClient httpclient = HttpClients.createDefault();
-		HttpGet httpGet = new HttpGet("http://localhost:3000/api/CoffeeShops?filter[limit]=2");
+		HttpGet httpGet = new HttpGet("https://mobile-dev.audaexplore.com/api/Claims/55ba90f90017bca358bdaad0?access_token=hJDl3JZb5xCkcZCpfADqqKRTNo2EgwMD");
 		CloseableHttpResponse response1 = httpclient.execute(httpGet);
 		try {
             System.out.println(response1.getStatusLine());
             HttpEntity entity1 = response1.getEntity();
             System.out.println(EntityUtils.toString(entity1));
-            // do something useful with the response body
-            // and ensure it is fully consumed
-            EntityUtils.consume(entity1);
         } finally {
             response1.close();
         }
